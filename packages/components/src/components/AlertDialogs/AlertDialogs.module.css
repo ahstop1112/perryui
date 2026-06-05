@@ -1,0 +1,17 @@
+.paper {
+  min-width: 600px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.actions {
+  padding: 16px;
+}
+
+@media (max-width: 960px) {
+  .paper {
+    min-width: 400px;
+  }
+}

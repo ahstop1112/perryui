@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.title {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.emptyWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.emptyMessage {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.listContainer {
+  width: 100%;
+  overflow-x: auto;
+  padding-top: 8px;
+}
+
+.list {
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+/* Header */
+.listHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.headerCell {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  user-select: none;
+}
+
+.sortIcon {
+  display: inline-flex;
+  align-items: center;
+  width: 20px;
+}
+
+/* Body */
+.listBody {
+  width: 100%;
+}
+
+.listRow {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 8px 0;
+}
+
+.expandCell {
+  flex: 0 0 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.rowCell {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  padding: 12px 8px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  cursor: pointer;
+}
+
+.listRow:last-child .rowCell {
+  border-bottom: none;
+}
+
+/* Field width helpers */
+.field_5  { flex: 0 0 5%; }
+.field_15 { flex: 0 0 15%; }
+.field_18 { flex: 0 0 18%; }
+.field_20 { flex: 0 0 20%; }
+.field_25 { flex: 0 0 25%; }
+.field_30 { flex: 0 0 30%; }
+.field_35 { flex: 0 0 35%; }
+.field_45 { flex: 0 0 45%; }
+.field_75 { flex: 0 0 75%; }
+
+/* Action */
+.actionIcon {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Sub-table */
+.subTableContainer {
+  padding: 16px;
+  width: 100%;
+}
+
+.subTableHead {}
+.subHeaderCell {
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+}
+
+.subRow { width: 100%; }
+.subRowCell { font-size: 0.75rem; border: none; }
+
+/* Footer */
+.footer {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+.footerCount {
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.pagination {}

@@ -1,0 +1,15 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.closeButton {
+  margin-left: auto;
+}
+
+.content {
+  padding: 8px 20px;
+}

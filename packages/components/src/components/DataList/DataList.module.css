@@ -1,0 +1,16 @@
+.list {
+  width: 100%;
+}
+
+.itemButton {
+  border-radius: 4px;
+}
+
+.icon {
+  min-width: 40px;
+}
+
+.empty {
+  padding: 16px 0;
+  font-style: italic;
+}

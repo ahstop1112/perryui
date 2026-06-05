@@ -1,0 +1,11 @@
+.root {
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

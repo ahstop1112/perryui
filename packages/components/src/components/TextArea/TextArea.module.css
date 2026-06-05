@@ -1,0 +1,23 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  resize: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+}
+
+.charCount {
+  font-size: 0.75rem;
+  color: inherit;
+  opacity: 0.6;
+  margin-left: auto;
+}
