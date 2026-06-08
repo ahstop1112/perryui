@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { CheckBox } from './CheckBox'
+import CheckBox from './CheckBox'
 import type { CheckboxOption } from './CheckBox'
 
 const defaultOptions: CheckboxOption[] = [

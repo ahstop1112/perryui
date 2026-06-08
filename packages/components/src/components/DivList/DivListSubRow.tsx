@@ -1,6 +1,6 @@
 import React from 'react'
 import { TableRow, TableCell } from '@mui/material'
-import styles from './DivList.module.css'
+import styles from './DivList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface DivListSubRowProps {
@@ -11,7 +11,7 @@ export interface DivListSubRowProps {
 const formatNumber = (val: number): string =>
   val.toLocaleString('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
-export function DivListSubRow({ subRow, columns }: DivListSubRowProps) {
+const DivListSubRow = ({ subRow, columns }: DivListSubRowProps) => {
   return (
     <TableRow className={styles.subRow}>
       {Object.keys(subRow)
@@ -26,3 +26,5 @@ export function DivListSubRow({ subRow, columns }: DivListSubRowProps) {
     </TableRow>
   )
 }
+
+export default DivListSubRow

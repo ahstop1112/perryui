@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextField, FormHelperText, InputAdornment } from '@mui/material'
-import styles from './FilledTextField.module.css'
+import styles from './FilledTextField.module.scss'
 
 export interface FilledTextFieldProps {
   name: string
@@ -18,7 +18,7 @@ export interface FilledTextFieldProps {
   id?: string
 }
 
-export function FilledTextField({
+const FilledTextField = ({
   name,
   value,
   onChange,
@@ -32,7 +32,7 @@ export function FilledTextField({
   fullWidth = true,
   required = false,
   id,
-}: FilledTextFieldProps) {
+}: FilledTextFieldProps) => {
   const errorId = `${name}-error`
   const hasError = Boolean(error)
 
@@ -78,3 +78,5 @@ export function FilledTextField({
     </div>
   )
 }
+
+export default FilledTextField

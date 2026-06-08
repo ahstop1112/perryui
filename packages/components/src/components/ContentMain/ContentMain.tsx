@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import styles from './ContentMain.module.css'
+import styles from './ContentMain.module.scss'
 
 export interface ContentMainProps {
   children: React.ReactNode
@@ -16,7 +16,7 @@ const MAX_WIDTH_VALUES: Record<string, string> = {
   xl: '1536px',
 }
 
-export function ContentMain({ children, maxWidth = false, className }: ContentMainProps) {
+const ContentMain = ({ children, maxWidth = false, className }: ContentMainProps) => {
   const maxWidthValue = maxWidth ? MAX_WIDTH_VALUES[maxWidth] : '100%'
 
   return (
@@ -32,3 +32,5 @@ export function ContentMain({ children, maxWidth = false, className }: ContentMa
     </Box>
   )
 }
+
+export default ContentMain

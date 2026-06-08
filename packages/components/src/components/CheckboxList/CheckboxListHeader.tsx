@@ -2,7 +2,7 @@ import React from 'react'
 import { TableHead, TableRow, TableCell, Checkbox } from '@mui/material'
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
-import styles from './CheckboxList.module.css'
+import styles from './CheckboxList.module.scss'
 import type { ColumnMap } from './types'
 
 export interface CheckboxListHeaderProps {
@@ -18,7 +18,7 @@ export interface CheckboxListHeaderProps {
 
 const ACTION_COLS = new Set(['view', 'edit', 'add', 'review', 'sinceCreate'])
 
-export function CheckboxListHeader({
+const CheckboxListHeader = ({
   columns,
   numSelected,
   totalRows,
@@ -27,7 +27,7 @@ export function CheckboxListHeader({
   sortOrder,
   canSort = false,
   onSort,
-}: CheckboxListHeaderProps) {
+}: CheckboxListHeaderProps) => {
   const renderSortIcon = (col: string) => {
     const def = columns[col]
     if (!def.isSort || !pageSorts || ACTION_COLS.has(col)) return null
@@ -70,3 +70,5 @@ export function CheckboxListHeader({
     </TableHead>
   )
 }
+
+export default CheckboxListHeader

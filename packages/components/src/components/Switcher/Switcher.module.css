@@ -1,8 +1,0 @@
-.root {
-  display: inline-flex;
-  align-items: center;
-}
-
-.switch {
-  /* Color overrides are managed by MUI theme tokens via color="primary" */
-}

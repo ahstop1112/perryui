@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { TransferList } from './TransferList'
+import TransferList from './TransferList'
 
 const ITEMS = [
   { id: 1, title: 'Alpha' },

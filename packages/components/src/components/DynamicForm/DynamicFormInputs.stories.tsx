@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
 import Box from '@mui/material/Box'
-import { DynamicFormInputs } from './DynamicFormInputs'
+import DynamicFormInputs from './DynamicFormInputs'
 import type { FormField } from './DynamicForm.types'
 
 const meta: Meta<typeof DynamicFormInputs> = {

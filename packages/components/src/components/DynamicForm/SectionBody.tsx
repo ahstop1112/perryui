@@ -1,8 +1,8 @@
 import React from 'react'
 import { Grid } from '@mui/material'
-import { FormInputs } from './FormInputs'
-import { Multiple } from './Multiple'
-import styles from './DynamicForm.module.css'
+import FormInputs from './FormInputs'
+import Multiple from './Multiple'
+import styles from './DynamicForm.module.scss'
 import type { FormField, FormSection } from './types'
 
 export interface SectionBodyProps {
@@ -15,7 +15,7 @@ export interface SectionBodyProps {
   onMultipleRemove?: (fieldName: string, sectionKey: string, subItemKey: string) => void
 }
 
-export function SectionBody({
+const SectionBody = ({
   section,
   sectionKey,
   pageAction,
@@ -23,7 +23,7 @@ export function SectionBody({
   renderField,
   onMultipleAdd,
   onMultipleRemove,
-}: SectionBodyProps) {
+}: SectionBodyProps) => {
   const { fields } = section
 
   const shownFields = Object.keys(fields).filter(
@@ -75,3 +75,5 @@ export function SectionBody({
     </Grid>
   )
 }
+
+export default SectionBody

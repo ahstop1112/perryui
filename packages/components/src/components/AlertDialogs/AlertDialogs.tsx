@@ -1,6 +1,6 @@
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button } from '@mui/material'
 import { ReactNode } from 'react'
-import styles from './AlertDialogs.module.css'
+import styles from './AlertDialogs.module.scss'
 
 export interface AlertDialogsProps {
   open: boolean
@@ -15,7 +15,7 @@ export interface AlertDialogsProps {
   onCancel?: () => void
 }
 
-export function AlertDialogs({
+const AlertDialogs = ({
   open,
   title,
   content,
@@ -26,7 +26,7 @@ export function AlertDialogs({
   okColor = 'primary',
   onOk,
   onCancel,
-}: AlertDialogsProps) {
+}: AlertDialogsProps) => {
   return (
     <Dialog
       open={open}
@@ -61,3 +61,5 @@ export function AlertDialogs({
     </Dialog>
   )
 }
+
+export default AlertDialogs

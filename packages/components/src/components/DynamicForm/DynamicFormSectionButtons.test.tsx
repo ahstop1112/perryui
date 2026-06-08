@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { DynamicFormSectionButtons } from './DynamicFormSectionButtons'
+import DynamicFormSectionButtons from './DynamicFormSectionButtons'
 
 describe('DynamicFormSectionButtons', () => {
   it('renders submit button', () => {

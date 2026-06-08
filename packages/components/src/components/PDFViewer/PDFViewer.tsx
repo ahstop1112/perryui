@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 import Tooltip from '@mui/material/Tooltip'
 import Typography from '@mui/material/Typography'
-import styles from './PDFViewer.module.css'
+import styles from './PDFViewer.module.scss'
 
 export interface PDFViewerProps {
   url: string
@@ -17,7 +17,7 @@ const ZOOM_STEP = 0.25
 const MIN_ZOOM = 0.5
 const MAX_ZOOM = 3.0
 
-export const PDFViewer: React.FC<PDFViewerProps> = ({
+const PDFViewer: React.FC<PDFViewerProps> = ({
   url,
   title = 'PDF Document',
   zoomable = true,
@@ -90,3 +90,5 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
     </Box>
   )
 }
+
+export default PDFViewer

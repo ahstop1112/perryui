@@ -5,8 +5,8 @@ import Typography from '@mui/material/Typography'
 import DeleteIcon from '@mui/icons-material/Delete'
 import AddIcon from '@mui/icons-material/Add'
 import type { FormField } from './DynamicForm.types'
-import { DynamicFormInputs } from './DynamicFormInputs'
-import styles from './DynamicFormMultipleChild.module.css'
+import DynamicFormInputs from './DynamicFormInputs'
+import styles from './DynamicFormMultipleChild.module.scss'
 
 export interface MultipleChildItem {
   [key: string]: unknown
@@ -24,7 +24,7 @@ export interface DynamicFormMultipleChildProps {
   errors?: Record<string, string>
 }
 
-export function DynamicFormMultipleChild({
+const DynamicFormMultipleChild = ({
   fields,
   items,
   label,
@@ -34,7 +34,7 @@ export function DynamicFormMultipleChild({
   readOnly,
   maxItems,
   errors,
-}: DynamicFormMultipleChildProps) {
+}: DynamicFormMultipleChildProps) => {
   const canAdd = !readOnly && (maxItems === undefined || items.length < maxItems)
 
   return (
@@ -90,3 +90,5 @@ export function DynamicFormMultipleChild({
     </Box>
   )
 }
+
+export default DynamicFormMultipleChild

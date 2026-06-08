@@ -3,9 +3,9 @@ import { Table, TableBody, Collapse, Box, IconButton } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
-import { DivListSubHeader } from './DivListSubHeader'
-import { DivListSubRow } from './DivListSubRow'
-import styles from './DivList.module.css'
+import DivListSubHeader from './DivListSubHeader'
+import DivListSubRow from './DivListSubRow'
+import styles from './DivList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface DivListRowProps {
@@ -28,14 +28,14 @@ const defaultFormatDate = (val: unknown): string => {
 const formatNumber = (val: number): string =>
   val.toLocaleString('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
-export function DivListRow({
+const DivListRow = ({
   row,
   columns,
   subColumns,
   onAction,
   formatDate = defaultFormatDate,
   renderCell,
-}: DivListRowProps) {
+}: DivListRowProps) => {
   const [open, setOpen] = useState(false)
   const details = Array.isArray(row.details) ? (row.details as RowData[]) : null
   const hasDetails = details && details.length > 0
@@ -103,3 +103,5 @@ export function DivListRow({
     </>
   )
 }
+
+export default DivListRow

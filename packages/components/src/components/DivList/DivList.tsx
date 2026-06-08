@@ -1,9 +1,9 @@
 import React from 'react'
 import { Grid, CircularProgress } from '@mui/material'
-import { DivListHeader } from './DivListHeader'
-import { DivListBody } from './DivListBody'
-import { DivListFooter } from './DivListFooter'
-import styles from './DivList.module.css'
+import DivListHeader from './DivListHeader'
+import DivListBody from './DivListBody'
+import DivListFooter from './DivListFooter'
+import styles from './DivList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface DivListProps {
@@ -30,7 +30,7 @@ export interface DivListProps {
   renderCell?: (col: string, value: unknown, row: RowData) => React.ReactNode
 }
 
-export function DivList({
+const DivList = ({
   columns,
   rows,
   subColumns,
@@ -52,7 +52,7 @@ export function DivList({
   className = '',
   formatDate,
   renderCell,
-}: DivListProps) {
+}: DivListProps) => {
   const showFooterBar = showFooter && totalCount > 5 && onPageChange && onRowsPerPageChange
   const hasRows = rows.length > 0
 
@@ -103,3 +103,5 @@ export function DivList({
     </Grid>
   )
 }
+
+export default DivList

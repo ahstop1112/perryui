@@ -20,7 +20,7 @@ export interface IconsExports {
   pdfIcon: string
 }
 
-export const IconsDisplay: React.FC = () => (
+const IconsDisplay: React.FC = () => (
   <Box display="flex" flexDirection="column" gap={2}>
     <Typography variant="caption">
       Replace placeholder strings with actual asset imports in your app.
@@ -33,3 +33,5 @@ export const IconsDisplay: React.FC = () => (
     />
   </Box>
 )
+
+export default IconsDisplay

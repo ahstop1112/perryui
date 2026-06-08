@@ -2,7 +2,7 @@ import React from 'react'
 import TextField from '@mui/material/TextField'
 import FormHelperText from '@mui/material/FormHelperText'
 import Box from '@mui/material/Box'
-import styles from './DatePicker.module.css'
+import styles from './DatePicker.module.scss'
 
 export interface DatePickerProps {
   value: string // ISO date string 'YYYY-MM-DD' or ''
@@ -16,7 +16,7 @@ export interface DatePickerProps {
   fullWidth?: boolean
 }
 
-export const DatePicker: React.FC<DatePickerProps> = ({
+const DatePicker: React.FC<DatePickerProps> = ({
   value,
   onChange,
   label,
@@ -52,3 +52,5 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     </Box>
   )
 }
+
+export default DatePicker

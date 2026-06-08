@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { NumberField } from './NumberField'
+import NumberField from './NumberField'
 
 const meta: Meta<typeof NumberField> = {
   title: 'Components/NumberField',

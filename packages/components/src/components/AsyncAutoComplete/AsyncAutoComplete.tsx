@@ -5,7 +5,7 @@ import {
   FormHelperText,
   Chip,
 } from '@mui/material'
-import styles from './AsyncAutoComplete.module.css'
+import styles from './AsyncAutoComplete.module.scss'
 
 export interface SelectOption {
   value: string
@@ -29,7 +29,7 @@ export interface AsyncAutoCompleteProps {
   id?: string
 }
 
-export function AsyncAutoComplete({
+const AsyncAutoComplete = ({
   name,
   value,
   onChange,
@@ -44,7 +44,7 @@ export function AsyncAutoComplete({
   required = false,
   fullWidth = true,
   id,
-}: AsyncAutoCompleteProps) {
+}: AsyncAutoCompleteProps) => {
   const [options, setOptions] = useState<SelectOption[]>([])
   const [loading, setLoading] = useState(false)
   const [inputValue, setInputValue] = useState('')
@@ -133,3 +133,5 @@ export function AsyncAutoComplete({
     </div>
   )
 }
+
+export default AsyncAutoComplete

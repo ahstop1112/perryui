@@ -1,0 +1,8 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  margin-bottom: $spacing-2;
+  font-family: $font-family-base;
+  font-size: $font-size-section-title;
+  font-weight: $font-weight-semibold;
+}

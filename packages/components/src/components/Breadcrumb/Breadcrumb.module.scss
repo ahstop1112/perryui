@@ -1,0 +1,15 @@
+@use '../../../styles/tokens' as *;
+
+.breadcrumb {
+  font-size: $font-size-caption;
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.link {
+  font-size: $font-size-caption;
+}
+
+.current {
+  font-size: $font-size-caption;
+}

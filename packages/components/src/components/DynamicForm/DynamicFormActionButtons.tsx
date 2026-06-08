@@ -15,12 +15,12 @@ export interface DynamicFormActionButtonsProps {
   disabled?: boolean
 }
 
-export function DynamicFormActionButtons({
+const DynamicFormActionButtons = ({
   actions,
   onAction,
   loading,
   disabled,
-}: DynamicFormActionButtonsProps) {
+}: DynamicFormActionButtonsProps) => {
   return (
     <Box display="flex" gap={1} flexWrap="wrap">
       {actions.map((action) => (
@@ -37,3 +37,5 @@ export function DynamicFormActionButtons({
     </Box>
   )
 }
+
+export default DynamicFormActionButtons

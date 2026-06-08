@@ -1,2 +1,2 @@
-export { FileUploadArea } from './FileUploadArea'
+export { default as FileUploadArea } from './FileUploadArea'
 export type { FileUploadAreaProps, UploadedFile } from './FileUploadArea'

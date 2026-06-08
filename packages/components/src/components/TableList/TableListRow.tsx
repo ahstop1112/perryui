@@ -1,7 +1,7 @@
 import React from 'react'
 import { TableRow, TableCell } from '@mui/material'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
-import styles from './TableList.module.css'
+import styles from './TableList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface TableListRowProps {
@@ -27,13 +27,13 @@ function isRecord(v: unknown): v is Record<string, unknown> {
   return typeof v === 'object' && v !== null && !Array.isArray(v)
 }
 
-export function TableListRow({
+const TableListRow = ({
   row,
   columns,
   onAction,
   formatDate = defaultFormatDate,
   renderCell,
-}: TableListRowProps) {
+}: TableListRowProps) => {
   const renderDefault = (col: string): React.ReactNode => {
     const value = row[col]
     const colDef = columns[col]
@@ -124,3 +124,5 @@ export function TableListRow({
     </TableRow>
   )
 }
+
+export default TableListRow

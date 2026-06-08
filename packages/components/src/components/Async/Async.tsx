@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { Loading } from '../Loading'
+import Loading from '../Loading/Loading'
 
 export function asyncComponent<T extends object>(
   importFn: () => Promise<{ default: React.ComponentType<T> }>,
@@ -20,4 +20,6 @@ export function asyncComponent<T extends object>(
 }
 
 // Re-export the function itself for convenience
-export const Async = asyncComponent
+const Async = asyncComponent
+
+export default Async

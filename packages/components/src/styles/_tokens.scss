@@ -1,0 +1,78 @@
+// ============================================================
+// PerryUI Design Tokens
+// Enterprise Fintech Component Library
+// ============================================================
+
+// ─── Colors — Brand ──────────────────────────────────────────
+$color-white:   #FFFFFF;
+$color-surface: #F5F6FA;
+$color-primary: #0057A8;
+
+// ─── Colors — Semantic ───────────────────────────────────────
+$color-success: #00C853;
+$color-error:   #D50000;
+$color-warning: #FF9800;
+$color-info:    #2196F3;
+$color-neutral: #9E9E9E;
+
+// ─── Colors — Status dots (legacy indicators) ────────────────
+$color-status-success: #4CAF50;
+$color-status-error:   #F44336;
+$color-status-warning: #FF9800;
+$color-status-draft:   #BDBDBD;
+
+// ─── Colors — UI chrome ──────────────────────────────────────
+$color-border:        rgba(0, 0, 0, 0.08);
+$color-border-table:  rgba(224, 224, 224, 1);
+$color-divider:       rgba(0, 0, 0, 0.12);
+$color-row-alt:       rgba(0, 0, 0, 0.02);
+$color-overlay:       rgba(255, 255, 255, 0.5);
+$color-selected-bg:   rgba(25, 118, 210, 0.12);
+$color-selected-text: #1976D2;
+$color-error-label:   #D32F2F;
+$color-text-neutral:  #757575;
+
+// ─── Typography ──────────────────────────────────────────────
+$font-family-base: 'Noto Sans HK', sans-serif;
+
+$font-size-page-title:    20px;
+$font-size-section-title: 16px;
+$font-size-body:          14px;
+$font-size-label:         13px;
+$font-size-caption:       12px;
+
+$font-weight-bold:      700;
+$font-weight-semibold:  600;
+$font-weight-medium:    500;
+$font-weight-regular:   400;
+
+// ─── Border radius ───────────────────────────────────────────
+$border-radius-card:    12px;
+$border-radius-input:   8px;
+$border-radius-button:  8px;
+$border-radius-chip:    6px;
+$border-radius-tooltip: 6px;
+$border-radius-action:  4px;
+$border-radius-circle:  50%;
+
+// ─── Borders ─────────────────────────────────────────────────
+$border-width:   1px;
+$border-default: $border-width solid $color-border;
+$border-table:   $border-width solid $color-border-table;
+
+// ─── Shadows ─────────────────────────────────────────────────
+$shadow-card:  0 1px 4px rgba(0, 0, 0, 0.06);
+$shadow-none:  none;
+
+// ─── Spacing ─────────────────────────────────────────────────
+$spacing-unit: 4px;
+$spacing-1:    4px;
+$spacing-2:    8px;
+$spacing-3:    12px;
+$spacing-4:    16px;
+$spacing-5:    20px;
+$spacing-6:    24px;
+
+// ─── Z-index ─────────────────────────────────────────────────
+$z-index-sticky:          100;
+$z-index-loading-overlay: 9999;

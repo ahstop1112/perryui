@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { DynamicFormActionButtons } from './DynamicFormActionButtons'
+import DynamicFormActionButtons from './DynamicFormActionButtons'
 import type { FormAction } from './DynamicFormActionButtons'
 
 const actions: FormAction[] = [

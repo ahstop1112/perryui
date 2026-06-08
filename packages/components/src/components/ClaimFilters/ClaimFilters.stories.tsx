@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { ClaimFilters } from './ClaimFilters'
+import ClaimFilters from './ClaimFilters'
 
 const meta: Meta<typeof ClaimFilters> = {
   title: 'Components/ClaimFilters',

@@ -15,11 +15,11 @@ export interface NotificationPopUpProps {
   autoHideDuration?: number
 }
 
-export function NotificationPopUp({
+const NotificationPopUp = ({
   notifications,
   onClose,
   autoHideDuration = 6000,
-}: NotificationPopUpProps) {
+}: NotificationPopUpProps) => {
   const latest = notifications[notifications.length - 1]
   if (!latest) return null
 
@@ -41,3 +41,5 @@ export function NotificationPopUp({
     </Snackbar>
   )
 }
+
+export default NotificationPopUp

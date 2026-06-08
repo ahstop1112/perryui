@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextField as MuiTextField, FormHelperText } from '@mui/material'
-import styles from './TextField.module.css'
+import styles from './TextField.module.scss'
 
 export interface TextFieldProps {
   name: string
@@ -18,7 +18,7 @@ export interface TextFieldProps {
   id?: string
 }
 
-export function TextField({
+const TextField = ({
   name,
   value,
   onChange,
@@ -32,7 +32,7 @@ export function TextField({
   fullWidth = true,
   required = false,
   id,
-}: TextFieldProps) {
+}: TextFieldProps) => {
   const errorId = `${name}-error`
   const hasError = Boolean(error)
 
@@ -69,3 +69,5 @@ export function TextField({
     </div>
   )
 }
+
+export default TextField

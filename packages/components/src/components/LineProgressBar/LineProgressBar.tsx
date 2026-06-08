@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Tooltip } from '@mui/material'
-import styles from './LineProgressBar.module.css'
+import styles from './LineProgressBar.module.scss'
 
 export interface ProgressSegment {
   key: string
@@ -15,11 +15,11 @@ export interface LineProgressBarProps {
   height?: number
 }
 
-export function LineProgressBar({
+const LineProgressBar = ({
   segments,
   showZero = false,
   height = 8,
-}: LineProgressBarProps) {
+}: LineProgressBarProps) => {
   const visibleSegments = segments.filter((s) => s.value > 0 || showZero)
 
   return (
@@ -49,3 +49,5 @@ export function LineProgressBar({
     </Box>
   )
 }
+
+export default LineProgressBar

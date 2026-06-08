@@ -1,6 +1,6 @@
 import React from 'react'
 import { CircularProgress, Box } from '@mui/material'
-import styles from './Loading.module.css'
+import styles from './Loading.module.scss'
 
 export interface LoadingProps {
   /** Diameter of the spinner in px */
@@ -11,7 +11,7 @@ export interface LoadingProps {
   fullPage?: boolean
 }
 
-export function Loading({ size = 40, color = 'primary', fullPage = false }: LoadingProps) {
+const Loading = ({ size = 40, color = 'primary', fullPage = false }: LoadingProps) => {
   return (
     <Box
       className={fullPage ? styles.fullPage : styles.container}
@@ -22,3 +22,5 @@ export function Loading({ size = 40, color = 'primary', fullPage = false }: Load
     </Box>
   )
 }
+
+export default Loading

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Grid, Table, CircularProgress } from '@mui/material'
-import { CheckboxListHeader } from './CheckboxListHeader'
-import { CheckboxListBody } from './CheckboxListBody'
-import { CheckboxListFooter } from './CheckboxListFooter'
-import styles from './CheckboxList.module.css'
+import CheckboxListHeader from './CheckboxListHeader'
+import CheckboxListBody from './CheckboxListBody'
+import CheckboxListFooter from './CheckboxListFooter'
+import styles from './CheckboxList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface CheckboxListProps {
@@ -31,7 +31,7 @@ export interface CheckboxListProps {
   renderCell?: (col: string, value: unknown, row: RowData) => React.ReactNode
 }
 
-export function CheckboxList({
+const CheckboxList = ({
   columns,
   rows,
   isLoading = false,
@@ -54,7 +54,7 @@ export function CheckboxList({
   className = '',
   formatDate,
   renderCell,
-}: CheckboxListProps) {
+}: CheckboxListProps) => {
   const isControlled = controlledIds !== undefined
   const [internalIds, setInternalIds] = useState<(string | number)[]>([])
   const selectedIds = isControlled ? controlledIds : internalIds
@@ -141,3 +141,5 @@ export function CheckboxList({
     </Grid>
   )
 }
+
+export default CheckboxList

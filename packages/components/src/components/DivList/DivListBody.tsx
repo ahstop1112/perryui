@@ -1,6 +1,6 @@
 import React from 'react'
-import { DivListRow } from './DivListRow'
-import styles from './DivList.module.css'
+import DivListRow from './DivListRow'
+import styles from './DivList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface DivListBodyProps {
@@ -12,7 +12,7 @@ export interface DivListBodyProps {
   renderCell?: (col: string, value: unknown, row: RowData) => React.ReactNode
 }
 
-export function DivListBody({ rows, columns, subColumns, onAction, formatDate, renderCell }: DivListBodyProps) {
+const DivListBody = ({ rows, columns, subColumns, onAction, formatDate, renderCell }: DivListBodyProps) => {
   return (
     <div className={styles.listBody} role="rowgroup">
       {rows.map((row, i) => (
@@ -29,3 +29,5 @@ export function DivListBody({ rows, columns, subColumns, onAction, formatDate, r
     </div>
   )
 }
+
+export default DivListBody

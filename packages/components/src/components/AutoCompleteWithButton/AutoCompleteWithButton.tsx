@@ -6,8 +6,8 @@ import {
   Chip,
   Box,
 } from '@mui/material'
-import { Button } from '../Button/Button'
-import styles from './AutoCompleteWithButton.module.css'
+import Button from '../Button/Button'
+import styles from './AutoCompleteWithButton.module.scss'
 
 export interface SelectOption {
   value: string
@@ -32,7 +32,7 @@ export interface AutoCompleteWithButtonProps {
   id?: string
 }
 
-export function AutoCompleteWithButton({
+const AutoCompleteWithButton = ({
   name,
   value,
   onChange,
@@ -48,7 +48,7 @@ export function AutoCompleteWithButton({
   required = false,
   fullWidth = true,
   id,
-}: AutoCompleteWithButtonProps) {
+}: AutoCompleteWithButtonProps) => {
   const errorId = `${name}-error`
   const hasError = Boolean(error)
 
@@ -112,3 +112,5 @@ export function AutoCompleteWithButton({
     </div>
   )
 }
+
+export default AutoCompleteWithButton

@@ -11,7 +11,7 @@ import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
 import Autocomplete from '@mui/material/Autocomplete'
 import type { FormField, DateRangeValue, SelectOption } from './DynamicForm.types'
-import { DynamicFormInputLabel } from './DynamicFormInputLabel'
+import DynamicFormInputLabel from './DynamicFormInputLabel'
 
 export interface DynamicFormInputsProps {
   field: FormField
@@ -289,13 +289,13 @@ function renderInput(
 
 const noLabelTypes: Array<FormField['type']> = ['notice', 'subTitle', 'tagline', 'multiple', 'button']
 
-export function DynamicFormInputs({
+const DynamicFormInputs = ({
   field,
   value,
   onChange,
   readOnly,
   error,
-}: DynamicFormInputsProps) {
+}: DynamicFormInputsProps) => {
   const inputNode = renderInput(field, value, onChange, readOnly, error)
 
   if (noLabelTypes.includes(field.type)) {
@@ -316,3 +316,5 @@ export function DynamicFormInputs({
     </Box>
   )
 }
+
+export default DynamicFormInputs

@@ -7,7 +7,7 @@ import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import styles from './FilePreviewer.module.css'
+import styles from './FilePreviewer.module.scss'
 
 export interface PreviewFile {
   name: string
@@ -22,7 +22,7 @@ export interface FilePreviewerProps {
   onDownload?: (file: PreviewFile) => void
 }
 
-export const FilePreviewer: React.FC<FilePreviewerProps> = ({
+const FilePreviewer: React.FC<FilePreviewerProps> = ({
   open,
   file,
   onClose,
@@ -81,3 +81,5 @@ export const FilePreviewer: React.FC<FilePreviewerProps> = ({
     </Dialog>
   )
 }
+
+export default FilePreviewer

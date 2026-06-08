@@ -1,0 +1,26 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-base;
+}
+
+.textarea {
+  resize: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: $spacing-1;
+}
+
+.charCount {
+  font-size: $font-size-caption;
+  color: inherit;
+  opacity: 0.6;
+  margin-left: auto;
+}

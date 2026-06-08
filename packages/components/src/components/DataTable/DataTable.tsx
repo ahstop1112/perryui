@@ -8,7 +8,7 @@ import {
   Paper,
 } from '@mui/material'
 import { ReactNode } from 'react'
-import styles from './DataTable.module.css'
+import styles from './DataTable.module.scss'
 
 export interface DataTableColumn {
   key: string
@@ -53,7 +53,7 @@ function formatCellValue(
   }
 }
 
-export function DataTable({ columns, rows, emptyMessage = 'No data available.' }: DataTableProps) {
+const DataTable = ({ columns, rows, emptyMessage = 'No data available.' }: DataTableProps) => {
   return (
     <TableContainer component={Paper} className={styles.container}>
       <Table aria-label="data table">
@@ -93,3 +93,5 @@ export function DataTable({ columns, rows, emptyMessage = 'No data available.' }
     </TableContainer>
   )
 }
+
+export default DataTable

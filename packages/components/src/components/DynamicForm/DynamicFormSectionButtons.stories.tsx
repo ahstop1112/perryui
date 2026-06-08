@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { DynamicFormSectionButtons } from './DynamicFormSectionButtons'
+import DynamicFormSectionButtons from './DynamicFormSectionButtons'
 
 const meta: Meta<typeof DynamicFormSectionButtons> = {
   title: 'DynamicForm/DynamicFormSectionButtons',

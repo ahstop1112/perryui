@@ -1,2 +1,2 @@
-export { LineProgressBar } from './LineProgressBar'
+export { default as LineProgressBar } from './LineProgressBar'
 export type { LineProgressBarProps, ProgressSegment } from './LineProgressBar'

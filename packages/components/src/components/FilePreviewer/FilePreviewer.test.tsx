@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { FilePreviewer } from './FilePreviewer'
+import FilePreviewer from './FilePreviewer'
 
 describe('FilePreviewer', () => {
   const pdfFile = { name: 'doc.pdf', type: 'application/pdf', url: 'http://example.com/doc.pdf' }

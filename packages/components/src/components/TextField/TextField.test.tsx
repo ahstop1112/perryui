@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { TextField } from './TextField'
+import TextField from './TextField'
 
 describe('TextField', () => {
   it('renders the input', () => {

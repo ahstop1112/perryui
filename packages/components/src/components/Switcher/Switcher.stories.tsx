@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Switcher } from './Switcher'
+import Switcher from './Switcher'
 
 const meta: Meta<typeof Switcher> = {
   title: 'Components/Switcher',

@@ -4,12 +4,12 @@ import {
   AccordionDetails, AccordionSummary
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { SectionHeader } from './SectionHeader'
-import { SectionBody } from './SectionBody'
-import { SectionButtons } from './SectionButtons'
-import { StepperForm } from './StepperForm'
-import { InlineForm } from './InlineForm'
-import styles from './DynamicForm.module.css'
+import SectionHeader from './SectionHeader'
+import SectionBody from './SectionBody'
+import SectionButtons from './SectionButtons'
+import StepperForm from './StepperForm'
+import InlineForm from './InlineForm'
+import styles from './DynamicForm.module.scss'
 import type { FormField, FormSchema, FormSection } from './types'
 
 export interface DynamicFormProps {
@@ -31,7 +31,7 @@ export interface DynamicFormProps {
 
 const SUBMIT_ON_ENTER = new Set(['search', 'login', 'reject', 'cancel', 'return'])
 
-export function DynamicForm({
+const DynamicForm = ({
   id,
   schema,
   actionTypes = [],
@@ -46,7 +46,7 @@ export function DynamicForm({
   onMultipleRemove,
   onStepNext,
   className = '',
-}: DynamicFormProps) {
+}: DynamicFormProps) => {
   const { layout } = schema
   const layoutType = layout.type ?? 'default'
   const shownSections = layout.isSectionShown ?? []
@@ -197,3 +197,5 @@ export function DynamicForm({
     </form>
   )
 }
+
+export default DynamicForm

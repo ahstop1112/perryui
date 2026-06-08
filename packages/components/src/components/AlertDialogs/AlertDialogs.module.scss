@@ -1,0 +1,22 @@
+@use '../../../styles/tokens' as *;
+
+.paper {
+  min-width: 600px;
+  border-radius: $border-radius-card;
+  font-family: $font-family-base;
+}
+
+.title {
+  font-size: $font-size-section-title;
+  font-weight: $font-weight-bold;
+}
+
+.actions {
+  padding: $spacing-4;
+}
+
+@media (max-width: 960px) {
+  .paper {
+    min-width: 400px;
+  }
+}

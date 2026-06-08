@@ -8,7 +8,7 @@ import {
   ClickAwayListener,
   Grow,
 } from '@mui/material'
-import styles from './MenuItem.module.css'
+import styles from './MenuItem.module.scss'
 
 export interface MenuSubItem {
   key: string
@@ -31,7 +31,7 @@ export interface MenuItemProps {
   menuItem: MenuItemDef
 }
 
-export function MenuItem({ menuItem }: MenuItemProps) {
+const MenuItem = ({ menuItem }: MenuItemProps) => {
   const [open, setOpen] = useState(false)
   const anchorRef = useRef<HTMLButtonElement>(null)
 
@@ -114,3 +114,5 @@ export function MenuItem({ menuItem }: MenuItemProps) {
     </div>
   )
 }
+
+export default MenuItem

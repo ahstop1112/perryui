@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { DivList } from './DivList'
+import DivList from './DivList'
 import type { ColumnMap, RowData } from './types'
 
 const COLUMNS: ColumnMap = {

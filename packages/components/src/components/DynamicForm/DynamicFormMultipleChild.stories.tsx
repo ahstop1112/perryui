@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { DynamicFormMultipleChild } from './DynamicFormMultipleChild'
+import DynamicFormMultipleChild from './DynamicFormMultipleChild'
 import type { MultipleChildItem } from './DynamicFormMultipleChild'
 import type { FormField } from './DynamicForm.types'
 

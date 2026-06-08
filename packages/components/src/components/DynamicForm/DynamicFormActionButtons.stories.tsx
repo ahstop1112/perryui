@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { DynamicFormActionButtons } from './DynamicFormActionButtons'
+import DynamicFormActionButtons from './DynamicFormActionButtons'
 import type { FormAction } from './DynamicFormActionButtons'
 
 const sampleActions: FormAction[] = [

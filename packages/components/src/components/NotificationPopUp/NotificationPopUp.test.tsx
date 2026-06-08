@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { NotificationPopUp } from './NotificationPopUp'
+import NotificationPopUp from './NotificationPopUp'
 import type { NotificationItem } from './NotificationPopUp'
 
 const makeNotification = (overrides: Partial<NotificationItem> = {}): NotificationItem => ({

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { DataList } from './DataList'
+import DataList from './DataList'
 
 const meta: Meta<typeof DataList> = {
   title: 'Components/DataList',

@@ -1,0 +1,11 @@
+@use '../../../styles/tokens' as *;
+
+.container {
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.info {
+  white-space: nowrap;
+  font-size: $font-size-body;
+}

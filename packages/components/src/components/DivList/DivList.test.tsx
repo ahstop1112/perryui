@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { DivList } from './DivList'
+import DivList from './DivList'
 import type { ColumnMap, RowData } from './types'
 
 const COLUMNS: ColumnMap = {

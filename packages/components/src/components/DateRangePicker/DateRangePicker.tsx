@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField'
 import FormHelperText from '@mui/material/FormHelperText'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import styles from './DateRangePicker.module.css'
+import styles from './DateRangePicker.module.scss'
 
 export interface DateRangeValue {
   startDate: string // 'YYYY-MM-DD' or ''
@@ -21,7 +21,7 @@ export interface DateRangePickerProps {
   max?: string
 }
 
-export const DateRangePicker: React.FC<DateRangePickerProps> = ({
+const DateRangePicker: React.FC<DateRangePickerProps> = ({
   value,
   onChange,
   startLabel = 'From',
@@ -83,3 +83,5 @@ export const DateRangePicker: React.FC<DateRangePickerProps> = ({
     </Box>
   )
 }
+
+export default DateRangePicker

@@ -7,7 +7,7 @@ import {
   FormHelperText,
   FormLabel,
 } from '@mui/material'
-import styles from './RadioButton.module.css'
+import styles from './RadioButton.module.scss'
 
 export interface RadioOption {
   value: string
@@ -33,7 +33,7 @@ export interface RadioButtonProps {
   error?: string
 }
 
-export function RadioButton({
+const RadioButton = ({
   name,
   value,
   options,
@@ -42,7 +42,7 @@ export function RadioButton({
   label,
   row = false,
   error,
-}: RadioButtonProps) {
+}: RadioButtonProps) => {
   const hasError = Boolean(error)
 
   return (
@@ -77,3 +77,5 @@ export function RadioButton({
     </FormControl>
   )
 }
+
+export default RadioButton

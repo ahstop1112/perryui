@@ -1,0 +1,19 @@
+@use '../../../styles/tokens' as *;
+
+.container {
+  width: 100%;
+  overflow-x: auto;
+  font-family: $font-family-base;
+}
+
+.headerCell {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-caption;
+  white-space: nowrap;
+}
+
+.emptyCell {
+  color: $color-text-neutral;
+  padding: $spacing-6 $spacing-4;
+  font-size: $font-size-body;
+}

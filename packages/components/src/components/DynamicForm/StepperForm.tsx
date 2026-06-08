@@ -1,9 +1,9 @@
 import React from 'react'
 import { Grid, Box, Stepper, Step, StepLabel, Button, Typography } from '@mui/material'
-import { SectionHeader } from './SectionHeader'
-import { SectionBody } from './SectionBody'
-import { SectionButtons } from './SectionButtons'
-import styles from './DynamicForm.module.css'
+import SectionHeader from './SectionHeader'
+import SectionBody from './SectionBody'
+import SectionButtons from './SectionButtons'
+import styles from './DynamicForm.module.scss'
 import type { FormField, FormSchema, FormSection } from './types'
 
 export interface StepperFormProps {
@@ -24,7 +24,7 @@ export interface StepperFormProps {
   onCancel?: () => void
 }
 
-export function StepperForm({
+const StepperForm = ({
   schema,
   stepKeys,
   activeStep,
@@ -40,7 +40,7 @@ export function StepperForm({
   onMultipleAdd,
   onMultipleRemove,
   onCancel,
-}: StepperFormProps) {
+}: StepperFormProps) => {
   const isFinished = activeStep >= stepKeys.length
   const currentKey = stepKeys[activeStep]
   const currentSection = currentKey ? (schema[currentKey] as FormSection) : null
@@ -117,3 +117,5 @@ export function StepperForm({
     </Box>
   )
 }
+
+export default StepperForm

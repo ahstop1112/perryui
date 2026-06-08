@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, FormControlLabel } from '@mui/material'
-import styles from './Switcher.module.css'
+import styles from './Switcher.module.scss'
 
 export interface SwitcherProps {
   /** Input name attribute */
@@ -17,14 +17,14 @@ export interface SwitcherProps {
   size?: 'small' | 'medium'
 }
 
-export function Switcher({
+const Switcher = ({
   name,
   checked,
   disabled = false,
   onChange,
   label,
   size = 'medium',
-}: SwitcherProps) {
+}: SwitcherProps) => {
   const switchEl = (
     <Switch
       name={name}
@@ -51,3 +51,5 @@ export function Switcher({
 
   return <span className={styles.root}>{switchEl}</span>
 }
+
+export default Switcher

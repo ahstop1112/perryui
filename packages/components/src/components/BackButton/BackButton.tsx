@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button } from '@mui/material'
-import styles from './BackButton.module.css'
+import styles from './BackButton.module.scss'
 
 export interface BackButtonProps {
   onClick: () => void
   label?: string
 }
 
-export function BackButton({ onClick, label = 'Back' }: BackButtonProps) {
+const BackButton = ({ onClick, label = 'Back' }: BackButtonProps) => {
   return (
     <Button
       variant="text"
@@ -20,3 +20,5 @@ export function BackButton({ onClick, label = 'Back' }: BackButtonProps) {
     </Button>
   )
 }
+
+export default BackButton

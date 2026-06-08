@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { DynamicFormInputLabel } from './DynamicFormInputLabel'
+import DynamicFormInputLabel from './DynamicFormInputLabel'
 
 const meta: Meta<typeof DynamicFormInputLabel> = {
   title: 'DynamicForm/DynamicFormInputLabel',

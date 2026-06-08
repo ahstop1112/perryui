@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Chip } from '@mui/material'
-import { DataTable } from './DataTable'
+import DataTable from './DataTable'
 import type { DataTableColumn } from './DataTable'
 
 const meta: Meta<typeof DataTable> = {

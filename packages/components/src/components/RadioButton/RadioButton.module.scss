@@ -1,0 +1,14 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.group {
+  width: 100%;
+}
+
+.item {
+  font-size: $font-size-body;
+}

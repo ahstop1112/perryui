@@ -1,0 +1,8 @@
+@use '../../../styles/tokens' as *;
+
+.button {
+  text-transform: none;
+  white-space: nowrap;
+  font-family: $font-family-base;
+  border-radius: $border-radius-button;
+}

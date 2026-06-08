@@ -1,16 +1,16 @@
-export { CheckboxList } from './CheckboxList'
+export { default as CheckboxList } from './CheckboxList'
 export type { CheckboxListProps } from './CheckboxList'
 
-export { CheckboxListHeader } from './CheckboxListHeader'
+export { default as CheckboxListHeader } from './CheckboxListHeader'
 export type { CheckboxListHeaderProps } from './CheckboxListHeader'
 
-export { CheckboxListBody } from './CheckboxListBody'
+export { default as CheckboxListBody } from './CheckboxListBody'
 export type { CheckboxListBodyProps } from './CheckboxListBody'
 
-export { CheckboxListRow } from './CheckboxListRow'
+export { default as CheckboxListRow } from './CheckboxListRow'
 export type { CheckboxListRowProps } from './CheckboxListRow'
 
-export { CheckboxListFooter } from './CheckboxListFooter'
+export { default as CheckboxListFooter } from './CheckboxListFooter'
 export type { CheckboxListFooterProps } from './CheckboxListFooter'
 
 export type { ListColumn, ColumnMap, RowData } from './types'

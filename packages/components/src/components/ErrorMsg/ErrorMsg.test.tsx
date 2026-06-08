@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { ErrorMsg } from './ErrorMsg'
+import ErrorMsg from './ErrorMsg'
 
 describe('ErrorMsg', () => {
   it('renders a single error message', () => {

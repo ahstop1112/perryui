@@ -1,6 +1,6 @@
 import React from 'react'
 import { Pagination as MuiPagination, Box, Typography } from '@mui/material'
-import styles from './Pagination.module.css'
+import styles from './Pagination.module.scss'
 
 export interface PaginationProps {
   /** Total number of rows/items */
@@ -17,14 +17,14 @@ export interface PaginationProps {
   showLastButton?: boolean
 }
 
-export function Pagination({
+const Pagination = ({
   totalCount,
   pageSize = 10,
   page,
   onChange,
   showFirstButton = true,
   showLastButton = true,
-}: PaginationProps) {
+}: PaginationProps) => {
   const totalPages = Math.ceil(totalCount / pageSize)
   if (totalPages <= 1) return null
 
@@ -51,3 +51,5 @@ export function Pagination({
     </Box>
   )
 }
+
+export default Pagination

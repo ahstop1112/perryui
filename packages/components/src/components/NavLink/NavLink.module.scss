@@ -1,0 +1,8 @@
+@use '../../../styles/tokens' as *;
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+}

@@ -1,0 +1,14 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-base;
+}
+
+.errorText {
+  margin-top: $spacing-1;
+  margin-left: 0;
+  font-size: $font-size-caption;
+}

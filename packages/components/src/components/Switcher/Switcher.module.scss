@@ -1,0 +1,11 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-family-base;
+}
+
+.switch {
+  /* Color overrides are managed by MUI theme tokens via color="primary" */
+}

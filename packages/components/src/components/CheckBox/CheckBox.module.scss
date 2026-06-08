@@ -1,0 +1,25 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.item {
+  box-sizing: border-box;
+  padding-right: $spacing-2;
+  font-size: $font-size-body;
+}
+
+/* Column width presets */
+.col1 { width: 100%; }
+.col2 { width: 50%; }
+.col3 { width: 33.3333%; }
+.col4 { width: 25%; }
+.col6 { width: 16.6667%; }

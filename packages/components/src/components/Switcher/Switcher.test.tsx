@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { Switcher } from './Switcher'
+import Switcher from './Switcher'
 
 describe('Switcher', () => {
   it('renders a switch input', () => {

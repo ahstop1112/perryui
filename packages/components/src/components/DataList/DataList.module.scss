@@ -1,0 +1,21 @@
+@use '../../../styles/tokens' as *;
+
+.list {
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.itemButton {
+  border-radius: $border-radius-action;
+}
+
+.icon {
+  min-width: 40px;
+}
+
+.empty {
+  padding: $spacing-4 0;
+  font-style: italic;
+  font-size: $font-size-body;
+  color: $color-text-neutral;
+}

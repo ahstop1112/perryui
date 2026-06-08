@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material'
-import { ActionButtons } from './ActionButtons'
-import styles from './DynamicForm.module.css'
+import ActionButtons from './ActionButtons'
+import styles from './DynamicForm.module.scss'
 
 export interface SectionButtonsProps {
   actionTypes?: string[]
@@ -22,7 +22,7 @@ const ACTION_PAGE_ACTIONS = new Set([
   'add', 'login', 'draft', 'edit', 'resubmit', 'review',
 ])
 
-export function SectionButtons({
+const SectionButtons = ({
   actionTypes = [],
   pageAction,
   isLoading,
@@ -30,7 +30,7 @@ export function SectionButtons({
   layoutType,
   onSubmit,
   onCancel,
-}: SectionButtonsProps) {
+}: SectionButtonsProps) => {
   if (pageAction === 'evaluate') {
     return (
       <>
@@ -93,3 +93,5 @@ export function SectionButtons({
 
   return null
 }
+
+export default SectionButtons

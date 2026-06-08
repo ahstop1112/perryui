@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { FilledTextField } from './FilledTextField'
+import FilledTextField from './FilledTextField'
 
 describe('FilledTextField', () => {
   it('renders an input', () => {

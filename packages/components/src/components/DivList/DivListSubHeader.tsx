@@ -1,6 +1,6 @@
 import React from 'react'
 import { TableHead, TableRow, TableCell } from '@mui/material'
-import styles from './DivList.module.css'
+import styles from './DivList.module.scss'
 import type { ColumnMap } from './types'
 
 export interface DivListSubHeaderProps {
@@ -8,7 +8,7 @@ export interface DivListSubHeaderProps {
   className?: string
 }
 
-export function DivListSubHeader({ columns, className = '' }: DivListSubHeaderProps) {
+const DivListSubHeader = ({ columns, className = '' }: DivListSubHeaderProps) => {
   return (
     <TableHead className={`${styles.subTableHead} ${className}`}>
       <TableRow>
@@ -21,3 +21,5 @@ export function DivListSubHeader({ columns, className = '' }: DivListSubHeaderPr
     </TableHead>
   )
 }
+
+export default DivListSubHeader

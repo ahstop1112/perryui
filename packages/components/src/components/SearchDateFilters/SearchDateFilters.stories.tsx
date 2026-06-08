@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { SearchDateFilters } from './SearchDateFilters'
+import SearchDateFilters from './SearchDateFilters'
 
 const meta: Meta<typeof SearchDateFilters> = {
   title: 'Components/SearchDateFilters',

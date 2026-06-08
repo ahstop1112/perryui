@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { AsyncAutoComplete } from './AsyncAutoComplete'
+import AsyncAutoComplete from './AsyncAutoComplete'
 
 const mockLoad = vi.fn().mockResolvedValue([{ value: 'hsbc', label: 'HSBC' }])
 

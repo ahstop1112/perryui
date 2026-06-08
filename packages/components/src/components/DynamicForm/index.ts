@@ -1,34 +1,34 @@
-export { DynamicForm } from './DynamicForm'
+export { default as DynamicForm } from './DynamicForm'
 export type { DynamicFormProps } from './DynamicForm'
 
-export { StepperForm } from './StepperForm'
+export { default as StepperForm } from './StepperForm'
 export type { StepperFormProps } from './StepperForm'
 
-export { InlineForm } from './InlineForm'
+export { default as InlineForm } from './InlineForm'
 export type { InlineFormProps } from './InlineForm'
 
-export { SectionHeader } from './SectionHeader'
+export { default as SectionHeader } from './SectionHeader'
 export type { SectionHeaderProps } from './SectionHeader'
 
-export { SectionBody } from './SectionBody'
+export { default as SectionBody } from './SectionBody'
 export type { SectionBodyProps } from './SectionBody'
 
-export { SectionButtons } from './SectionButtons'
+export { default as SectionButtons } from './SectionButtons'
 export type { SectionButtonsProps } from './SectionButtons'
 
-export { ActionButtons } from './ActionButtons'
+export { default as ActionButtons } from './ActionButtons'
 export type { ActionButtonsProps } from './ActionButtons'
 
-export { FormInputs } from './FormInputs'
+export { default as FormInputs } from './FormInputs'
 export type { FormInputsProps } from './FormInputs'
 
-export { InputLabel } from './InputLabel'
+export { default as InputLabel } from './InputLabel'
 export type { InputLabelProps } from './InputLabel'
 
-export { Multiple } from './Multiple'
+export { default as Multiple } from './Multiple'
 export type { MultipleProps } from './Multiple'
 
-export { MultipleChild } from './MultipleChild'
+export { default as MultipleChild } from './MultipleChild'
 export type { MultipleChildProps } from './MultipleChild'
 
 export type {

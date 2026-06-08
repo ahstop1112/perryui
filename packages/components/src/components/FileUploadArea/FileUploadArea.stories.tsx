@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { FileUploadArea } from './FileUploadArea'
+import FileUploadArea from './FileUploadArea'
 
 const meta: Meta<typeof FileUploadArea> = {
   title: 'Components/FileUploadArea',

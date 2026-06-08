@@ -1,2 +1,2 @@
-export { FormDialogs } from './FormDialogs'
+export { default as FormDialogs } from './FormDialogs'
 export type { FormDialogsProps } from './FormDialogs'

@@ -6,7 +6,7 @@ import {
   FormHelperText,
   FormControl,
 } from '@mui/material'
-import styles from './CheckBox.module.css'
+import styles from './CheckBox.module.scss'
 
 export interface CheckboxOption {
   /** Unique key used as the input name attribute */
@@ -40,14 +40,14 @@ const COLUMN_CLASS: Record<NonNullable<CheckBoxProps['columns']>, string> = {
   6: styles.col6,
 }
 
-export function CheckBox({
+const CheckBox = ({
   name,
   options,
   disabled = false,
   onChange,
   error,
   columns = 1,
-}: CheckBoxProps) {
+}: CheckBoxProps) => {
   const hasError = Boolean(error)
 
   return (
@@ -81,3 +81,5 @@ export function CheckBox({
     </FormControl>
   )
 }
+
+export default CheckBox

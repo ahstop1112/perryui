@@ -7,7 +7,7 @@ import {
   Typography,
 } from '@mui/material'
 import DescriptionIcon from '@mui/icons-material/Description'
-import styles from './DataList.module.css'
+import styles from './DataList.module.scss'
 
 export interface DataListItem {
   id?: string | number
@@ -22,11 +22,11 @@ export interface DataListProps {
   onItemClick?: (item: DataListItem) => void
 }
 
-export function DataList({
+const DataList = ({
   items,
   emptyMessage = 'No attachments available.',
   onItemClick,
-}: DataListProps) {
+}: DataListProps) => {
   if (items.length === 0) {
     return (
       <Typography className={styles.empty} color="text.secondary">
@@ -61,3 +61,5 @@ export function DataList({
     </List>
   )
 }
+
+export default DataList

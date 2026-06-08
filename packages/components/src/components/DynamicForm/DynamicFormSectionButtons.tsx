@@ -11,14 +11,14 @@ export interface DynamicFormSectionButtonsProps {
   disabled?: boolean
 }
 
-export function DynamicFormSectionButtons({
+const DynamicFormSectionButtons = ({
   onSubmit,
   onCancel,
   submitLabel,
   cancelLabel,
   loading,
   disabled,
-}: DynamicFormSectionButtonsProps) {
+}: DynamicFormSectionButtonsProps) => {
   return (
     <Box display="flex" justifyContent="flex-end" gap={1} mt={2}>
       {onCancel && (
@@ -36,3 +36,5 @@ export function DynamicFormSectionButtons({
     </Box>
   )
 }
+
+export default DynamicFormSectionButtons

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import TextField from '@mui/material/TextField'
-import { SearchContainer } from './SearchContainer'
+import SearchContainer from './SearchContainer'
 import type { SearchFilter } from './SearchContainer'
 
 const meta: Meta<typeof SearchContainer> = {

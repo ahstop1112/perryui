@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { DatePicker } from './DatePicker'
+import DatePicker from './DatePicker'
 
 describe('DatePicker', () => {
   it('renders with label', () => {

@@ -1,0 +1,21 @@
+@use '../../../styles/tokens' as *;
+
+.button {
+  position: relative;
+  font-family: $font-family-base;
+  border-radius: $border-radius-button;
+}
+
+/* Spinner is absolutely positioned so the button keeps its natural size */
+.spinnerWrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Label is hidden (but still in the DOM for accessibility/width) when loading */
+.hiddenLabel {
+  visibility: hidden;
+}

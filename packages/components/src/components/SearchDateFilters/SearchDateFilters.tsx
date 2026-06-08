@@ -1,5 +1,5 @@
 import { Chip } from '@mui/material'
-import styles from './SearchDateFilters.module.css'
+import styles from './SearchDateFilters.module.scss'
 
 export interface DateFilter {
   label: string
@@ -19,11 +19,11 @@ export interface SearchDateFiltersProps {
   onChange: (value: string) => void
 }
 
-export function SearchDateFilters({
+const SearchDateFilters = ({
   filters = DEFAULT_FILTERS,
   value,
   onChange,
-}: SearchDateFiltersProps) {
+}: SearchDateFiltersProps) => {
   return (
     <div className={styles.container} role="group" aria-label="Date filters">
       {filters.map((filter) => {
@@ -43,3 +43,5 @@ export function SearchDateFilters({
     </div>
   )
 }
+
+export default SearchDateFilters

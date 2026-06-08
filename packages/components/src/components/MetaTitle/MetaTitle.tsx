@@ -5,7 +5,7 @@ export interface MetaTitleProps {
   suffix?: string
 }
 
-export function MetaTitle({ title, suffix }: MetaTitleProps) {
+const MetaTitle = ({ title, suffix }: MetaTitleProps) => {
   useEffect(() => {
     const prev = document.title
     document.title = suffix ? `${title} - ${suffix}` : title
@@ -16,3 +16,5 @@ export function MetaTitle({ title, suffix }: MetaTitleProps) {
 
   return null
 }
+
+export default MetaTitle

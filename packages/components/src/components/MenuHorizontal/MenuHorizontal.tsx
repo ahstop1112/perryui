@@ -1,15 +1,15 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { MenuItem } from '../MenuItem'
+import MenuItem from '../MenuItem/MenuItem'
 import type { MenuItemDef } from '../MenuItem'
-import styles from './MenuHorizontal.module.css'
+import styles from './MenuHorizontal.module.scss'
 
 export interface MenuHorizontalProps {
   items: MenuItemDef[]
   separator?: string
 }
 
-export function MenuHorizontal({ items, separator = ' | ' }: MenuHorizontalProps) {
+const MenuHorizontal = ({ items, separator = ' | ' }: MenuHorizontalProps) => {
   return (
     <Box className={styles.root} display="flex" alignItems="center" flexWrap="wrap">
       {items.map((item, index) => (
@@ -30,3 +30,5 @@ export function MenuHorizontal({ items, separator = ' | ' }: MenuHorizontalProps
     </Box>
   )
 }
+
+export default MenuHorizontal

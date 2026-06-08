@@ -1,7 +1,7 @@
 import React from 'react'
 import { TableRow, TableCell, Checkbox } from '@mui/material'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
-import styles from './CheckboxList.module.css'
+import styles from './CheckboxList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface CheckboxListRowProps {
@@ -25,7 +25,7 @@ const defaultFormatDate = (val: unknown): string => {
 const formatNumber = (val: number): string =>
   val.toLocaleString('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
-export function CheckboxListRow({
+const CheckboxListRow = ({
   row,
   columns,
   isSelected,
@@ -33,7 +33,7 @@ export function CheckboxListRow({
   onAction,
   formatDate = defaultFormatDate,
   renderCell,
-}: CheckboxListRowProps) {
+}: CheckboxListRowProps) => {
   const id = row.id as string | number
 
   const renderDefault = (col: string): React.ReactNode => {
@@ -103,3 +103,5 @@ export function CheckboxListRow({
     </TableRow>
   )
 }
+
+export default CheckboxListRow

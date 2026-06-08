@@ -1,6 +1,6 @@
 import React from 'react'
 import { Breadcrumbs as MuiBreadcrumbs, Link, Typography } from '@mui/material'
-import styles from './Breadcrumb.module.css'
+import styles from './Breadcrumb.module.scss'
 
 export interface BreadcrumbItem {
   label: string
@@ -14,7 +14,7 @@ export interface BreadcrumbProps {
   current: string
 }
 
-export function Breadcrumb({ items = [], current }: BreadcrumbProps) {
+const Breadcrumb = ({ items = [], current }: BreadcrumbProps) => {
   return (
     <MuiBreadcrumbs
       aria-label="breadcrumb"
@@ -48,3 +48,5 @@ export function Breadcrumb({ items = [], current }: BreadcrumbProps) {
     </MuiBreadcrumbs>
   )
 }
+
+export default Breadcrumb

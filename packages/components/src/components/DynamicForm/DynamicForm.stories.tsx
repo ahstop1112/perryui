@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { DynamicForm } from './DynamicForm'
+import DynamicForm from './DynamicForm'
 import type { FormField, FormSchema } from './types'
 
 const makeSchema = (layoutType: 'default' | 'accordion' | 'steps' | 'inline'): FormSchema => ({

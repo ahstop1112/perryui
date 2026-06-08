@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Button, Stack } from '@mui/material'
-import { AlertDialogs } from '../AlertDialogs'
-import styles from './ClaimFilters.module.css'
+import AlertDialogs from '../AlertDialogs/AlertDialogs'
+import styles from './ClaimFilters.module.scss'
 
 export interface ClaimFiltersProps {
   selectedCount: number
@@ -13,7 +13,7 @@ export interface ClaimFiltersProps {
   unclaimLabel?: string
 }
 
-export function ClaimFilters({
+const ClaimFilters = ({
   selectedCount,
   showClaim = true,
   showUnclaim = true,
@@ -21,7 +21,7 @@ export function ClaimFilters({
   onUnclaim,
   claimLabel = 'Bulk Claim',
   unclaimLabel = 'Bulk Unclaim',
-}: ClaimFiltersProps) {
+}: ClaimFiltersProps) => {
   const [unclaimDialogOpen, setUnclaimDialogOpen] = useState(false)
 
   const isDisabled = selectedCount < 1
@@ -76,3 +76,5 @@ export function ClaimFilters({
     </>
   )
 }
+
+export default ClaimFilters

@@ -4,7 +4,7 @@ export interface DynamicFormSectionHeaderProps {
   title?: string
 }
 
-export function DynamicFormSectionHeader({ title }: DynamicFormSectionHeaderProps) {
+const DynamicFormSectionHeader = ({ title }: DynamicFormSectionHeaderProps) => {
   if (!title) return null
   return (
     <Typography variant="subtitle1" fontWeight={700} sx={{ mb: 1 }}>
@@ -12,3 +12,5 @@ export function DynamicFormSectionHeader({ title }: DynamicFormSectionHeaderProp
     </Typography>
   )
 }
+
+export default DynamicFormSectionHeader

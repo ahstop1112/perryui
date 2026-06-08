@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { AsyncAutoComplete } from './AsyncAutoComplete'
+import AsyncAutoComplete from './AsyncAutoComplete'
 import type { SelectOption } from './AsyncAutoComplete'
 
 const allStocks: SelectOption[] = [

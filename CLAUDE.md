@@ -125,6 +125,15 @@ perryui/
 - ❌ Commit `.env` files
 - ❌ Skip Storybook story when creating a new component
 - ❌ Skip tests when creating a new component
+- ❌ Use `export function` — always use `const Component` + `export default`
+- ❌ Use CSS Modules (.module.css) — use SCSS Modules (.module.scss) only
+- ❌ Hardcode values in SCSS — always import from `_tokens.scss`
+
+---
+
+## SCSS Token System
+- All SCSS variables defined in `packages/components/src/styles/_tokens.scss`
+- Every .module.scss MUST start with: `@use '../../../styles/tokens' as *`
 
 ---
 

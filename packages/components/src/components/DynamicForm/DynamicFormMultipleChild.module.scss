@@ -1,0 +1,7 @@
+@use '../../../styles/tokens' as *;
+
+.childSection {
+  padding: $spacing-2;
+  border-top: 1px dotted $color-divider;
+  font-family: $font-family-base;
+}

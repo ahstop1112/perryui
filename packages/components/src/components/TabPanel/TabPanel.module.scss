@@ -1,0 +1,10 @@
+@use '../../../styles/tokens' as *;
+
+.panel {
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.content {
+  width: 100%;
+}

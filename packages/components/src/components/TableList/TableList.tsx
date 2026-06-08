@@ -1,9 +1,9 @@
 import React from 'react'
 import { Grid, Table, CircularProgress } from '@mui/material'
-import { TableListHeader } from './TableListHeader'
-import { TableListBody } from './TableListBody'
-import { TableListFooter } from './TableListFooter'
-import styles from './TableList.module.css'
+import TableListHeader from './TableListHeader'
+import TableListBody from './TableListBody'
+import TableListFooter from './TableListFooter'
+import styles from './TableList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface TableListProps {
@@ -29,7 +29,7 @@ export interface TableListProps {
   renderCell?: (col: string, value: unknown, row: RowData) => React.ReactNode
 }
 
-export function TableList({
+const TableList = ({
   columns,
   rows,
   isLoading = false,
@@ -50,7 +50,7 @@ export function TableList({
   className = '',
   formatDate,
   renderCell,
-}: TableListProps) {
+}: TableListProps) => {
   const showFooterBar = showFooter && totalCount > 5 && onPageChange && onRowsPerPageChange
   const hasRows = rows.length > 0
 
@@ -100,3 +100,5 @@ export function TableList({
     </Grid>
   )
 }
+
+export default TableList

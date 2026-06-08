@@ -1,0 +1,14 @@
+@use '../../../styles/tokens' as *;
+
+.container {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-base;
+}
+
+.text {
+  font-size: $font-size-caption;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}

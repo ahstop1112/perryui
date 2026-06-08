@@ -1,7 +1,7 @@
 import React from 'react'
 import { TableBody } from '@mui/material'
-import { TableListRow } from './TableListRow'
-import styles from './TableList.module.css'
+import TableListRow from './TableListRow'
+import styles from './TableList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface TableListBodyProps {
@@ -12,7 +12,7 @@ export interface TableListBodyProps {
   renderCell?: (col: string, value: unknown, row: RowData) => React.ReactNode
 }
 
-export function TableListBody({ rows, columns, onAction, formatDate, renderCell }: TableListBodyProps) {
+const TableListBody = ({ rows, columns, onAction, formatDate, renderCell }: TableListBodyProps) => {
   return (
     <TableBody className={styles.tableBody}>
       {rows.map((row, i) => (
@@ -28,3 +28,5 @@ export function TableListBody({ rows, columns, onAction, formatDate, renderCell 
     </TableBody>
   )
 }
+
+export default TableListBody

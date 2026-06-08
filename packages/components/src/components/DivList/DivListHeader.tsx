@@ -1,7 +1,7 @@
 import React from 'react'
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
-import styles from './DivList.module.css'
+import styles from './DivList.module.scss'
 import type { ColumnMap } from './types'
 
 export interface DivListHeaderProps {
@@ -14,7 +14,7 @@ export interface DivListHeaderProps {
 
 const ACTION_COLS = new Set(['view', 'edit', 'add', 'review', 'favourite'])
 
-export function DivListHeader({ columns, pageSorts, sortOrder, canSort = false, onSort }: DivListHeaderProps) {
+const DivListHeader = ({ columns, pageSorts, sortOrder, canSort = false, onSort }: DivListHeaderProps) => {
   const renderSortIcon = (col: string) => {
     const def = columns[col]
     if (!def.isSort || !pageSorts || ACTION_COLS.has(col)) return null
@@ -43,3 +43,5 @@ export function DivListHeader({ columns, pageSorts, sortOrder, canSort = false, 
     </div>
   )
 }
+
+export default DivListHeader

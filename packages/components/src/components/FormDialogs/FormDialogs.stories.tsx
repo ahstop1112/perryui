@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { TextField, Stack } from '@mui/material'
-import { FormDialogs } from './FormDialogs'
+import FormDialogs from './FormDialogs'
 
 const meta: Meta<typeof FormDialogs> = {
   title: 'Components/FormDialogs',

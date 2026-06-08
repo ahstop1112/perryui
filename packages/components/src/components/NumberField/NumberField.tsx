@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { TextField, FormHelperText, InputAdornment } from '@mui/material'
-import styles from './NumberField.module.css'
+import styles from './NumberField.module.scss'
 
 export interface NumberFieldProps {
   name: string
@@ -44,7 +44,7 @@ function parseRaw(raw: string, allowNegative: boolean): number | '' {
   return isNaN(num) ? '' : num
 }
 
-export function NumberField({
+const NumberField = ({
   name,
   value,
   onChange,
@@ -61,7 +61,7 @@ export function NumberField({
   fullWidth = true,
   required = false,
   id,
-}: NumberFieldProps) {
+}: NumberFieldProps) => {
   const [isFocused, setIsFocused] = useState(false)
   const [inputStr, setInputStr] = useState(
     formatDisplay(value, { decimalScale, thousandSeparator }),
@@ -132,3 +132,5 @@ export function NumberField({
     </div>
   )
 }
+
+export default NumberField

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { CheckboxList } from './CheckboxList'
+import CheckboxList from './CheckboxList'
 import type { ColumnMap, RowData } from './types'
 
 const COLUMNS: ColumnMap = {

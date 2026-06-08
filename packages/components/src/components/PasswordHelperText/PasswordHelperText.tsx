@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import CancelIcon from '@mui/icons-material/Cancel'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
-import styles from './PasswordHelperText.module.css'
+import styles from './PasswordHelperText.module.scss'
 
 export interface PasswordHelperTextProps {
   label: string
@@ -11,11 +11,11 @@ export interface PasswordHelperTextProps {
   hasInput?: boolean
 }
 
-export function PasswordHelperText({
+const PasswordHelperText = ({
   label,
   success = null,
   hasInput = false,
-}: PasswordHelperTextProps) {
+}: PasswordHelperTextProps) => {
   const renderIcon = () => {
     if (!hasInput) {
       return (
@@ -59,3 +59,5 @@ export function PasswordHelperText({
     </Box>
   )
 }
+
+export default PasswordHelperText

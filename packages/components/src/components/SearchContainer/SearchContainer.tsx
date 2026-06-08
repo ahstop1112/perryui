@@ -9,7 +9,7 @@ import DialogContent from '@mui/material/DialogContent'
 import DialogActions from '@mui/material/DialogActions'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
-import styles from './SearchContainer.module.css'
+import styles from './SearchContainer.module.scss'
 
 export interface SearchFilter {
   key: string
@@ -29,7 +29,7 @@ export interface SearchContainerProps {
   placeholder?: string
 }
 
-export const SearchContainer: React.FC<SearchContainerProps> = ({
+const SearchContainer: React.FC<SearchContainerProps> = ({
   keyword,
   onKeywordChange,
   onSearch,
@@ -134,3 +134,5 @@ export const SearchContainer: React.FC<SearchContainerProps> = ({
     </Box>
   )
 }
+
+export default SearchContainer

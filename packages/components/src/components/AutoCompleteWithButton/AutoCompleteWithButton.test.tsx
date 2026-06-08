@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { AutoCompleteWithButton } from './AutoCompleteWithButton'
+import AutoCompleteWithButton from './AutoCompleteWithButton'
 import type { SelectOption } from './AutoCompleteWithButton'
 
 const options: SelectOption[] = [

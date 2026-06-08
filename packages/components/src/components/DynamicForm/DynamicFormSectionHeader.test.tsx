@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { DynamicFormSectionHeader } from './DynamicFormSectionHeader'
+import DynamicFormSectionHeader from './DynamicFormSectionHeader'
 
 describe('DynamicFormSectionHeader', () => {
   it('renders title text when provided', () => {

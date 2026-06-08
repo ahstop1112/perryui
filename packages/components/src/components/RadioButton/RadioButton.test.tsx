@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { RadioButton } from './RadioButton'
+import RadioButton from './RadioButton'
 
 const options = [
   { value: 'yes', label: 'Yes' },

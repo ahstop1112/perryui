@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { TransferList } from './TransferList'
+import TransferList from './TransferList'
 
 const SAMPLE_ITEMS = [
   { id: 1, title: 'Equity Trading' },

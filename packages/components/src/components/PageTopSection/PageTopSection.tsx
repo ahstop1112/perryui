@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Box } from '@mui/material'
-import styles from './PageTopSection.module.css'
+import styles from './PageTopSection.module.scss'
 
 export interface PageTopSectionProps {
   children: React.ReactNode
   sticky?: boolean
 }
 
-export function PageTopSection({ children, sticky = true }: PageTopSectionProps) {
+const PageTopSection = ({ children, sticky = true }: PageTopSectionProps) => {
   const [isSticky, setIsSticky] = useState(false)
   const sentinelRef = useRef<HTMLDivElement>(null)
 
@@ -48,3 +48,5 @@ export function PageTopSection({ children, sticky = true }: PageTopSectionProps)
     </>
   )
 }
+
+export default PageTopSection

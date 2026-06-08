@@ -1,14 +1,14 @@
 import React from 'react'
 import { List } from '@mui/material'
-import { MenuListItem } from '../MenuListItem'
+import MenuListItem from '../MenuListItem/MenuListItem'
 import type { SideNavItem } from '../MenuListItem'
-import styles from './MenuVertical.module.css'
+import styles from './MenuVertical.module.scss'
 
 export interface MenuVerticalProps {
   items: SideNavItem[]
 }
 
-export function MenuVertical({ items }: MenuVerticalProps) {
+const MenuVertical = ({ items }: MenuVerticalProps) => {
   return (
     <List className={styles.root} disablePadding>
       {items.map((item) => (
@@ -17,3 +17,5 @@ export function MenuVertical({ items }: MenuVerticalProps) {
     </List>
   )
 }
+
+export default MenuVertical

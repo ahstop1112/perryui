@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextField, FormHelperText } from '@mui/material'
-import styles from './TextArea.module.css'
+import styles from './TextArea.module.scss'
 
 export interface TextAreaProps {
   name: string
@@ -18,7 +18,7 @@ export interface TextAreaProps {
   id?: string
 }
 
-export function TextArea({
+const TextArea = ({
   name,
   value,
   onChange,
@@ -32,7 +32,7 @@ export function TextArea({
   fullWidth = true,
   required = false,
   id,
-}: TextAreaProps) {
+}: TextAreaProps) => {
   const errorId = `${name}-error`
   const hasError = Boolean(error)
 
@@ -75,3 +75,5 @@ export function TextArea({
     </div>
   )
 }
+
+export default TextArea

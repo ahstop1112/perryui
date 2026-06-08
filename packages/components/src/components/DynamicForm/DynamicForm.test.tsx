@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { DynamicForm } from './DynamicForm'
+import DynamicForm from './DynamicForm'
 import type { FormField, FormSchema } from './types'
 
 const SCHEMA: FormSchema = {

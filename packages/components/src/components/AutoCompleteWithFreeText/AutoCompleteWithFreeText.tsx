@@ -1,6 +1,6 @@
 import React from 'react'
 import { Autocomplete, TextField, FormHelperText, Chip, createFilterOptions } from '@mui/material'
-import styles from './AutoCompleteWithFreeText.module.css'
+import styles from './AutoCompleteWithFreeText.module.scss'
 
 export interface SelectOption {
   value: string
@@ -25,7 +25,7 @@ export interface AutoCompleteWithFreeTextProps {
 
 const filter = createFilterOptions<SelectOption>()
 
-export function AutoCompleteWithFreeText({
+const AutoCompleteWithFreeText = ({
   name,
   value,
   onChange,
@@ -38,7 +38,7 @@ export function AutoCompleteWithFreeText({
   required = false,
   fullWidth = true,
   id,
-}: AutoCompleteWithFreeTextProps) {
+}: AutoCompleteWithFreeTextProps) => {
   const errorId = `${name}-error`
   const hasError = Boolean(error)
 
@@ -117,3 +117,5 @@ export function AutoCompleteWithFreeText({
     </div>
   )
 }
+
+export default AutoCompleteWithFreeText

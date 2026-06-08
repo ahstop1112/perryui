@@ -1,0 +1,8 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  margin-bottom: $spacing-4;
+  font-family: $font-family-base;
+  font-size: $font-size-page-title;
+  font-weight: $font-weight-bold;
+}

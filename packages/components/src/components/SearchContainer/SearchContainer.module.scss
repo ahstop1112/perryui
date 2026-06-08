@@ -1,0 +1,26 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  font-family: $font-family-base;
+}
+
+.keywordRow {
+  display: flex;
+  gap: $spacing-2;
+  align-items: center;
+}
+
+.advancedSection {
+  width: 100%;
+}
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: $spacing-4;
+}
+
+.filterItem {
+  min-width: 0;
+}

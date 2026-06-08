@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tooltip } from '@mui/material'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutlined'
-import styles from './DynamicForm.module.css'
+import styles from './DynamicForm.module.scss'
 
 export interface InputLabelProps {
   label: string
@@ -14,7 +14,7 @@ export interface InputLabelProps {
   htmlFor?: string
 }
 
-export function InputLabel({
+const InputLabel = ({
   label,
   isRequired = false,
   isPreview = false,
@@ -23,7 +23,7 @@ export function InputLabel({
   tooltipText,
   remarks,
   htmlFor,
-}: InputLabelProps) {
+}: InputLabelProps) => {
   const hasError = isTouched && !isValid
 
   return (
@@ -46,3 +46,5 @@ export function InputLabel({
     </div>
   )
 }
+
+export default InputLabel

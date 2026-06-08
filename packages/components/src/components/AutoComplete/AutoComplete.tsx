@@ -5,7 +5,7 @@ import {
   FormHelperText,
   Chip,
 } from '@mui/material'
-import styles from './AutoComplete.module.css'
+import styles from './AutoComplete.module.scss'
 
 export interface SelectOption {
   value: string
@@ -29,7 +29,7 @@ export interface AutoCompleteProps {
   id?: string
 }
 
-export function AutoComplete({
+const AutoComplete = ({
   name,
   value,
   onChange,
@@ -44,7 +44,7 @@ export function AutoComplete({
   required = false,
   fullWidth = true,
   id,
-}: AutoCompleteProps) {
+}: AutoCompleteProps) => {
   const errorId = `${name}-error`
   const hasError = Boolean(error)
 
@@ -98,3 +98,5 @@ export function AutoComplete({
     </div>
   )
 }
+
+export default AutoComplete

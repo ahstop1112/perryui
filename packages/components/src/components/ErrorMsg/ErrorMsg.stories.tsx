@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { ErrorMsg } from './ErrorMsg'
+import ErrorMsg from './ErrorMsg'
 
 const meta: Meta<typeof ErrorMsg> = {
   title: 'Components/ErrorMsg',

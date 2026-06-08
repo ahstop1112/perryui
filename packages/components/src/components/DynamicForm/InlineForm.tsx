@@ -1,8 +1,8 @@
 import React from 'react'
 import { Grid } from '@mui/material'
-import { SectionBody } from './SectionBody'
-import { SectionButtons } from './SectionButtons'
-import styles from './DynamicForm.module.css'
+import SectionBody from './SectionBody'
+import SectionButtons from './SectionButtons'
+import styles from './DynamicForm.module.scss'
 import type { FormField, FormSchema, FormSection } from './types'
 
 export interface InlineFormProps {
@@ -19,7 +19,7 @@ export interface InlineFormProps {
   onMultipleRemove?: (fieldName: string, sectionKey: string, subItemKey: string) => void
 }
 
-export function InlineForm({
+const InlineForm = ({
   schema,
   sectionKeys,
   pageAction,
@@ -31,7 +31,7 @@ export function InlineForm({
   onCancel,
   onMultipleAdd,
   onMultipleRemove,
-}: InlineFormProps) {
+}: InlineFormProps) => {
   return (
     <>
       {sectionKeys.map(key => {
@@ -64,3 +64,5 @@ export function InlineForm({
     </>
   )
 }
+
+export default InlineForm

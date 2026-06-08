@@ -5,7 +5,7 @@ import IconButton from '@mui/material/IconButton'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
-import styles from './FileUploadArea.module.css'
+import styles from './FileUploadArea.module.scss'
 
 export interface UploadedFile {
   name: string
@@ -26,7 +26,7 @@ export interface FileUploadAreaProps {
   hint?: string
 }
 
-export const FileUploadArea: React.FC<FileUploadAreaProps> = ({
+const FileUploadArea: React.FC<FileUploadAreaProps> = ({
   files,
   onFilesChange,
   accept,
@@ -143,3 +143,5 @@ export const FileUploadArea: React.FC<FileUploadAreaProps> = ({
     </Box>
   )
 }
+
+export default FileUploadArea

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import styles from './TabPanel.module.css'
+import styles from './TabPanel.module.scss'
 
 export interface TabPanelProps {
   children?: React.ReactNode
@@ -12,7 +12,7 @@ export interface TabPanelProps {
   idPrefix?: string
 }
 
-export function TabPanel({ children, value, index, idPrefix = 'tab' }: TabPanelProps) {
+const TabPanel = ({ children, value, index, idPrefix = 'tab' }: TabPanelProps) => {
   const isVisible = value === index
 
   return (
@@ -31,3 +31,5 @@ export function TabPanel({ children, value, index, idPrefix = 'tab' }: TabPanelP
     </div>
   )
 }
+
+export default TabPanel

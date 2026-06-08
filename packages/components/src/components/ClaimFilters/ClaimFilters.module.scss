@@ -1,0 +1,13 @@
+@use '../../../styles/tokens' as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: $font-family-base;
+}
+
+.button {
+  text-transform: none;
+  white-space: nowrap;
+  border-radius: $border-radius-button;
+}

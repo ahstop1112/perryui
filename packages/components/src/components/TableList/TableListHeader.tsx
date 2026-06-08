@@ -2,7 +2,7 @@ import React from 'react'
 import { TableHead, TableRow, TableCell } from '@mui/material'
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
-import styles from './TableList.module.css'
+import styles from './TableList.module.scss'
 import type { ColumnMap } from './types'
 
 export interface TableListHeaderProps {
@@ -15,7 +15,7 @@ export interface TableListHeaderProps {
 
 const ACTION_COLS = new Set(['view', 'edit', 'add', 'view2', 'edit2', 'review', 'favourite'])
 
-export function TableListHeader({ columns, pageSorts, sortOrder, canSort = false, onSort }: TableListHeaderProps) {
+const TableListHeader = ({ columns, pageSorts, sortOrder, canSort = false, onSort }: TableListHeaderProps) => {
   const renderSortIcon = (col: string) => {
     const def = columns[col]
     if (!def.isSort || !pageSorts || ACTION_COLS.has(col)) return null
@@ -54,3 +54,5 @@ export function TableListHeader({ columns, pageSorts, sortOrder, canSort = false
     </TableHead>
   )
 }
+
+export default TableListHeader

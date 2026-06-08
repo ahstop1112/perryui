@@ -1,8 +1,8 @@
 import React from 'react'
 import { Grid, Button } from '@mui/material'
 import { Add, Remove } from '@mui/icons-material'
-import { FormInputs } from './FormInputs'
-import styles from './DynamicForm.module.css'
+import FormInputs from './FormInputs'
+import styles from './DynamicForm.module.scss'
 import type { FormField } from './types'
 
 export interface MultipleChildProps {
@@ -21,7 +21,7 @@ export interface MultipleChildProps {
   onRemove: (fieldName: string, sectionKey: string, subItemKey: string) => void
 }
 
-export function MultipleChild({
+const MultipleChild = ({
   field,
   sectionKey,
   grandParentField,
@@ -30,7 +30,7 @@ export function MultipleChild({
   renderField,
   onAdd,
   onRemove,
-}: MultipleChildProps) {
+}: MultipleChildProps) => {
   const { name = '', label = '', multipleChild = {} } = field
   const isView = pageAction === 'view'
   const subItems = Object.keys(multipleChild)
@@ -114,3 +114,5 @@ export function MultipleChild({
     </Grid>
   )
 }
+
+export default MultipleChild

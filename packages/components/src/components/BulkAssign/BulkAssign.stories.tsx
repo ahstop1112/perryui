@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { BulkAssign } from './BulkAssign'
+import BulkAssign from './BulkAssign'
 
 const meta: Meta<typeof BulkAssign> = {
   title: 'Components/BulkAssign',

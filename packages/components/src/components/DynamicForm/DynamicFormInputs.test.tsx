@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { DynamicFormInputs } from './DynamicFormInputs'
+import DynamicFormInputs from './DynamicFormInputs'
 import type { FormField } from './DynamicForm.types'
 
 function makeField(overrides: Partial<FormField> & Pick<FormField, 'name' | 'type'>): FormField {

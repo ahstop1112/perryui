@@ -1,0 +1,7 @@
+@use '../../../styles/tokens' as *;
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-base;
+}

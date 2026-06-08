@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Button } from '@mui/material'
-import { AlertDialogs } from '../AlertDialogs'
-import styles from './BulkAssign.module.css'
+import AlertDialogs from '../AlertDialogs/AlertDialogs'
+import styles from './BulkAssign.module.scss'
 
 export interface BulkAssignProps {
   selectedCount: number
@@ -11,13 +11,13 @@ export interface BulkAssignProps {
   buttonLabel?: string
 }
 
-export function BulkAssign({
+const BulkAssign = ({
   selectedCount,
   assigneeName,
   disabled = false,
   onAssign,
   buttonLabel = 'Bulk Assign',
-}: BulkAssignProps) {
+}: BulkAssignProps) => {
   const [open, setOpen] = useState(false)
 
   const isButtonDisabled = disabled || selectedCount < 1
@@ -56,3 +56,5 @@ export function BulkAssign({
     </>
   )
 }
+
+export default BulkAssign

@@ -11,7 +11,7 @@ import {
   Button,
   Divider,
 } from '@mui/material'
-import styles from './TransferList.module.css'
+import styles from './TransferList.module.scss'
 
 export interface TransferItem {
   /** Unique identifier */
@@ -47,14 +47,14 @@ function union<T>(a: T[], b: T[]): T[] {
   return [...a, ...not(b, a)]
 }
 
-export function TransferList({
+const TransferList = ({
   items,
   chosenIds,
   onChange,
   disabled = false,
   leftTitle = 'Choices',
   rightTitle = 'Chosen',
-}: TransferListProps) {
+}: TransferListProps) => {
   const allIds = items.map((item) => item.id)
   const rightIds = chosenIds.filter((id) => allIds.includes(id))
   const leftIds = allIds.filter((id) => !rightIds.includes(id))
@@ -189,3 +189,5 @@ export function TransferList({
     </Grid>
   )
 }
+
+export default TransferList

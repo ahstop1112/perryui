@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { SearchContainer } from './SearchContainer'
+import SearchContainer from './SearchContainer'
 
 describe('SearchContainer', () => {
   it('renders keyword input', () => {

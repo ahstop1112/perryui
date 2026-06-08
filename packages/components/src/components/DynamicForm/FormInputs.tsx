@@ -1,6 +1,6 @@
 import React from 'react'
-import { InputLabel } from './InputLabel'
-import styles from './DynamicForm.module.css'
+import InputLabel from './InputLabel'
+import styles from './DynamicForm.module.scss'
 import type { FormField } from './types'
 
 export interface FormInputsProps {
@@ -20,7 +20,7 @@ const NO_LABEL_TYPES = new Set([
   'subSubSubTitle', 'tagline', 'descHasLabel', 'descNoLabel',
 ])
 
-export function FormInputs({ field, sectionKey, renderField, pageAction }: FormInputsProps) {
+const FormInputs = ({ field, sectionKey, renderField, pageAction }: FormInputsProps) => {
   const {
     label = '',
     type = 'text',
@@ -64,3 +64,5 @@ export function FormInputs({ field, sectionKey, renderField, pageAction }: FormI
     </div>
   )
 }
+
+export default FormInputs

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './NavLink.module.css'
+import styles from './NavLink.module.scss'
 
 export interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string
@@ -8,7 +8,7 @@ export interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorEleme
   className?: string
 }
 
-export const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
+const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
   ({ href, activeClassName, children, className, ...rest }, ref) => {
     const isActive =
       typeof window !== 'undefined' && window.location.pathname === href
@@ -30,3 +30,5 @@ export const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
 )
 
 NavLink.displayName = 'NavLink'
+
+export default NavLink

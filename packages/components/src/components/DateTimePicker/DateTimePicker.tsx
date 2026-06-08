@@ -2,7 +2,7 @@ import React from 'react'
 import TextField from '@mui/material/TextField'
 import FormHelperText from '@mui/material/FormHelperText'
 import Box from '@mui/material/Box'
-import styles from './DateTimePicker.module.css'
+import styles from './DateTimePicker.module.scss'
 
 export interface DateTimePickerProps {
   value: string // ISO datetime-local string 'YYYY-MM-DDTHH:mm' or ''
@@ -15,7 +15,7 @@ export interface DateTimePickerProps {
   fullWidth?: boolean
 }
 
-export const DateTimePicker: React.FC<DateTimePickerProps> = ({
+const DateTimePicker: React.FC<DateTimePickerProps> = ({
   value,
   onChange,
   label,
@@ -49,3 +49,5 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
     </Box>
   )
 }
+
+export default DateTimePicker

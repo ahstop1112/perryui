@@ -1,0 +1,8 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-family: $font-family-base;
+}

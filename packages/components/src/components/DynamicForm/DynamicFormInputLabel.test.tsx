@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { DynamicFormInputLabel } from './DynamicFormInputLabel'
+import DynamicFormInputLabel from './DynamicFormInputLabel'
 
 describe('DynamicFormInputLabel', () => {
   it('renders label text', () => {

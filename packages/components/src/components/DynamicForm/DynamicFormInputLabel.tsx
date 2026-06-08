@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Tooltip from '@mui/material/Tooltip'
 import Typography from '@mui/material/Typography'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutlined'
-import styles from './DynamicFormInputLabel.module.css'
+import styles from './DynamicFormInputLabel.module.scss'
 
 export interface DynamicFormInputLabelProps {
   label: string
@@ -13,14 +13,14 @@ export interface DynamicFormInputLabelProps {
   htmlFor?: string
 }
 
-export function DynamicFormInputLabel({
+const DynamicFormInputLabel = ({
   label,
   required,
   readOnly,
   tooltipText,
   remarks,
   htmlFor,
-}: DynamicFormInputLabelProps) {
+}: DynamicFormInputLabelProps) => {
   return (
     <Box className={styles.root}>
       <label
@@ -45,3 +45,5 @@ export function DynamicFormInputLabel({
     </Box>
   )
 }
+
+export default DynamicFormInputLabel

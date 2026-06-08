@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { DataTable } from './DataTable'
+import DataTable from './DataTable'
 import type { DataTableColumn } from './DataTable'
 
 const basicColumns: DataTableColumn[] = [

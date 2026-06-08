@@ -1,0 +1,23 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-base;
+}
+
+.input {
+  border-radius: 0;
+}
+
+.icon {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.errorText {
+  margin-top: $spacing-1;
+  margin-left: 0;
+  font-size: $font-size-caption;
+}

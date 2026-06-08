@@ -9,7 +9,7 @@ import {
 } from '@mui/material'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import styles from './MenuListItem.module.css'
+import styles from './MenuListItem.module.scss'
 
 export interface SideNavSubItem {
   key: string
@@ -36,7 +36,7 @@ export interface MenuListItemProps {
   defaultExpanded?: boolean
 }
 
-export function MenuListItem({ menuItem, defaultExpanded = false }: MenuListItemProps) {
+const MenuListItem = ({ menuItem, defaultExpanded = false }: MenuListItemProps) => {
   const [open, setOpen] = useState(defaultExpanded)
 
   const handleToggle = () => {
@@ -93,3 +93,5 @@ export function MenuListItem({ menuItem, defaultExpanded = false }: MenuListItem
     </>
   )
 }
+
+export default MenuListItem

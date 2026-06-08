@@ -1,0 +1,7 @@
+@use '../../../styles/tokens' as *;
+
+.item {
+  padding: $spacing-3 0;
+  border-bottom: $border-default;
+  font-family: $font-family-base;
+}

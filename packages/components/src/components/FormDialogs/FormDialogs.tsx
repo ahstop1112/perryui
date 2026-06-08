@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogTitle, IconButton } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import { ReactNode } from 'react'
-import styles from './FormDialogs.module.css'
+import styles from './FormDialogs.module.scss'
 
 export interface FormDialogsProps {
   open: boolean
@@ -11,13 +11,13 @@ export interface FormDialogsProps {
   maxWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 }
 
-export function FormDialogs({
+const FormDialogs = ({
   open,
   title,
   onClose,
   children,
   maxWidth = 'sm',
-}: FormDialogsProps) {
+}: FormDialogsProps) => {
   return (
     <Dialog
       open={open}
@@ -41,3 +41,5 @@ export function FormDialogs({
     </Dialog>
   )
 }
+
+export default FormDialogs

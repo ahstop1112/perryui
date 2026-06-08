@@ -1,0 +1,205 @@
+@use '../../../styles/tokens' as *;
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: $spacing-3;
+  font-family: $font-family-base;
+}
+
+.title {
+  width: 100%;
+  font-size: $font-size-section-title;
+  font-weight: $font-weight-semibold;
+  margin: 0 0 $spacing-2;
+}
+
+/* Loading / Empty */
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.emptyWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.emptyMessage {
+  font-size: $font-size-section-title;
+  text-align: center;
+}
+
+/* Table */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  padding-top: $spacing-2;
+}
+
+.table {
+  font-size: $font-size-body;
+  width: 100%;
+}
+
+/* Header */
+.tableHead {
+  /* intentionally empty — MUI default border-bottom */
+}
+
+.headerCell {
+  font-size: $font-size-caption;
+  font-weight: $font-weight-bold;
+  white-space: nowrap;
+  vertical-align: bottom;
+  user-select: none;
+}
+
+.headerCell.noSort {
+  cursor: default;
+}
+
+.headerLabel {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.sortIcon {
+  display: inline-flex;
+  align-items: center;
+  width: 20px;
+}
+
+/* Sub-header */
+.subTableHead {}
+
+.subHeaderCell {
+  font-size: $font-size-caption;
+  border: none;
+}
+
+/* Body */
+.tableBody {}
+
+.tableRow {
+  border-bottom: $border-table;
+}
+
+.tableRow:nth-child(even) {
+  background-color: $color-row-alt;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableCell {
+  font-size: $font-size-caption;
+  padding: $spacing-2;
+}
+
+/* Cell types */
+.actionIcon {
+  cursor: pointer;
+  border-radius: $border-radius-action;
+  width: 18px;
+  height: 18px;
+}
+
+.dateCell {
+  white-space: pre-wrap;
+  max-width: 100px;
+}
+
+.linkCell {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nestedObject {
+  font-size: $font-size-caption;
+}
+
+.nestedObjectRow {
+  margin-bottom: $spacing-1;
+}
+
+/* Status */
+.statusCell {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.statusDot {
+  width: 14px;
+  height: 14px;
+  border-radius: $border-radius-circle;
+  margin-right: $spacing-2;
+  background-color: $color-neutral;
+}
+
+.statusCell.ACTIVE .statusDot,
+.statusCell.COMPLETED .statusDot { background-color: $color-status-success; }
+
+.statusCell.REJECTED .statusDot,
+.statusCell.CANCELLED .statusDot,
+.statusCell.DELETED .statusDot,
+.statusCell.EXPIRED .statusDot,
+.statusCell.TERMINATED .statusDot,
+.statusCell.LOCKED .statusDot,
+.statusCell.ISSUE .statusDot { background-color: $color-status-error; }
+
+.statusCell.PENDING .statusDot,
+.statusCell.PROCESSING .statusDot,
+.statusCell.NORMAL .statusDot { background-color: $color-status-warning; }
+
+.statusCell.DRAFT .statusDot { background-color: $color-status-draft; }
+
+.statusCell.RETURNED .statusDot {
+  background-color: transparent;
+  border: 2px solid $color-status-warning;
+}
+
+/* Sub-row */
+.subRow { width: 100%; }
+.subRowCell { font-size: $font-size-caption; border: none; line-height: 2; }
+
+/* Footer */
+.footer {
+  max-width: 100%;
+  overflow: hidden;
+  padding: $spacing-1 0;
+}
+
+.footerCount {
+  font-size: $font-size-body;
+  font-weight: $font-weight-bold;
+  display: flex;
+  align-items: center;
+}
+
+.pagination {}
+
+/* Field width helpers — mirror the reference class names */
+.field_2  { width: 2%; }
+.field_5  { width: 5%; }
+.field_10 { width: 10%; }
+.field_15 { width: 15%; }
+.field_18 { width: 18%; }
+.field_20 { width: 20%; min-width: 200px; max-width: 200px; }
+.field_25 { width: 25%; min-width: 250px; max-width: 250px; }
+.field_30 { width: 30%; min-width: 300px; max-width: 300px; }
+.field_35 { width: 35%; min-width: 350px; max-width: 350px; }
+.field_45 { width: 45%; min-width: 450px; max-width: 450px; }
+.field_75 { flex: 0 0 25%; }

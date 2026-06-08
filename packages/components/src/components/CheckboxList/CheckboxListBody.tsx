@@ -1,7 +1,7 @@
 import React from 'react'
 import { TableBody } from '@mui/material'
-import { CheckboxListRow } from './CheckboxListRow'
-import styles from './CheckboxList.module.css'
+import CheckboxListRow from './CheckboxListRow'
+import styles from './CheckboxList.module.scss'
 import type { ColumnMap, RowData } from './types'
 
 export interface CheckboxListBodyProps {
@@ -14,7 +14,7 @@ export interface CheckboxListBodyProps {
   renderCell?: (col: string, value: unknown, row: RowData) => React.ReactNode
 }
 
-export function CheckboxListBody({
+const CheckboxListBody = ({
   rows,
   columns,
   selectedIds,
@@ -22,7 +22,7 @@ export function CheckboxListBody({
   onAction,
   formatDate,
   renderCell,
-}: CheckboxListBodyProps) {
+}: CheckboxListBodyProps) => {
   return (
     <TableBody className={styles.tableBody}>
       {rows.map((row, i) => {
@@ -43,3 +43,5 @@ export function CheckboxListBody({
     </TableBody>
   )
 }
+
+export default CheckboxListBody

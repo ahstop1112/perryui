@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { AutoCompleteWithFreeText } from './AutoCompleteWithFreeText'
+import AutoCompleteWithFreeText from './AutoCompleteWithFreeText'
 import type { SelectOption } from './AutoCompleteWithFreeText'
 
 const options: SelectOption[] = [

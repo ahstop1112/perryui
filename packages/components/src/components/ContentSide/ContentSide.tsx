@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import styles from './ContentSide.module.css'
+import styles from './ContentSide.module.scss'
 
 export interface ContentSideProps {
   children: React.ReactNode
@@ -8,7 +8,7 @@ export interface ContentSideProps {
   width?: string | number
 }
 
-export function ContentSide({ children, className, width = 280 }: ContentSideProps) {
+const ContentSide = ({ children, className, width = 280 }: ContentSideProps) => {
   return (
     <Box
       className={`${styles.root} ${className ?? ''}`}
@@ -24,3 +24,5 @@ export function ContentSide({ children, className, width = 280 }: ContentSidePro
     </Box>
   )
 }
+
+export default ContentSide

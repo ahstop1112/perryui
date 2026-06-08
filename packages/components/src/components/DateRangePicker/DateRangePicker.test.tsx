@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { DateRangePicker } from './DateRangePicker'
+import DateRangePicker from './DateRangePicker'
 
 describe('DateRangePicker', () => {
   const defaultValue = { startDate: '', endDate: '' }

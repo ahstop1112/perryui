@@ -1,0 +1,15 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  padding: $spacing-4;
+  padding-bottom: 0;
+  font-family: $font-family-base;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: $z-index-sticky;
+  background-color: $color-surface;
+}

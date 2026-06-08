@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
-import styles from './ErrorMsg.module.css'
+import styles from './ErrorMsg.module.scss'
 
 export interface ErrorMsgProps {
   /** Single error string or array of error strings */
@@ -9,7 +9,7 @@ export interface ErrorMsgProps {
   id?: string
 }
 
-export function ErrorMsg({ message, id }: ErrorMsgProps) {
+const ErrorMsg = ({ message, id }: ErrorMsgProps) => {
   const messages = Array.isArray(message) ? message : [message]
 
   return (
@@ -28,3 +28,5 @@ export function ErrorMsg({ message, id }: ErrorMsgProps) {
     </div>
   )
 }
+
+export default ErrorMsg

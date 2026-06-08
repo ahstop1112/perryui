@@ -1,0 +1,9 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  width: 100%;
+  border-radius: $border-radius-chip;
+  display: flex;
+  overflow: hidden;
+  box-shadow: $shadow-card;
+}

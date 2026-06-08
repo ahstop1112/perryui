@@ -1,2 +1,2 @@
-export { AlertDialogs } from './AlertDialogs'
+export { default as AlertDialogs } from './AlertDialogs'
 export type { AlertDialogsProps } from './AlertDialogs'

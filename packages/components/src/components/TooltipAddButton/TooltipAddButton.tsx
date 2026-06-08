@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tooltip, Fab } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
-import styles from './TooltipAddButton.module.css'
+import styles from './TooltipAddButton.module.scss'
 
 export interface TooltipAddButtonProps {
   title: string
@@ -9,7 +9,7 @@ export interface TooltipAddButtonProps {
   disabled?: boolean
 }
 
-export function TooltipAddButton({ title, onClick, disabled = false }: TooltipAddButtonProps) {
+const TooltipAddButton = ({ title, onClick, disabled = false }: TooltipAddButtonProps) => {
   return (
     <span className={styles.root}>
       <Tooltip title={title}>
@@ -28,3 +28,5 @@ export function TooltipAddButton({ title, onClick, disabled = false }: TooltipAd
     </span>
   )
 }
+
+export default TooltipAddButton

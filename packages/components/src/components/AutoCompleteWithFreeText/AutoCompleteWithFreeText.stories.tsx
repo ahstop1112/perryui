@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { AutoCompleteWithFreeText } from './AutoCompleteWithFreeText'
+import AutoCompleteWithFreeText from './AutoCompleteWithFreeText'
 import type { SelectOption } from './AutoCompleteWithFreeText'
 
 const tags: SelectOption[] = [

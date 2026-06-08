@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { RadioButton } from './RadioButton'
+import RadioButton from './RadioButton'
 
 const riskOptions = [
   { value: 'low', label: 'Low' },

@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { FileUploadArea } from './FileUploadArea'
+import FileUploadArea from './FileUploadArea'
 
 describe('FileUploadArea', () => {
   it('renders drop zone with label', () => {

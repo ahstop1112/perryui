@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { PDFViewer } from './PDFViewer'
+import PDFViewer from './PDFViewer'
 
 const meta: Meta<typeof PDFViewer> = {
   title: 'Components/PDFViewer',

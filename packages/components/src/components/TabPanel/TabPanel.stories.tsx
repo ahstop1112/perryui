@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Tabs, Tab, Box } from '@mui/material'
-import { TabPanel } from './TabPanel'
+import TabPanel from './TabPanel'
 
 const meta: Meta<typeof TabPanel> = {
   title: 'Components/TabPanel',

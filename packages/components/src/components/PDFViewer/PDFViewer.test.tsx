@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import { PDFViewer } from './PDFViewer'
+import PDFViewer from './PDFViewer'
 
 describe('PDFViewer', () => {
   it('renders iframe with correct title', () => {

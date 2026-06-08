@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { SearchDateFilters } from './SearchDateFilters'
+import SearchDateFilters from './SearchDateFilters'
 import type { DateFilter } from './SearchDateFilters'
 
 const customFilters: DateFilter[] = [

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { AutoCompleteWithButton } from './AutoCompleteWithButton'
+import AutoCompleteWithButton from './AutoCompleteWithButton'
 import type { SelectOption } from './AutoCompleteWithButton'
 
 const brokers: SelectOption[] = [

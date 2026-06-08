@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
-import { FilledTextField } from './FilledTextField'
+import FilledTextField from './FilledTextField'
 
 const PersonIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

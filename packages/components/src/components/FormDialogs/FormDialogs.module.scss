@@ -1,0 +1,19 @@
+@use '../../../styles/tokens' as *;
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: $font-size-section-title;
+  font-weight: $font-weight-bold;
+  padding: $spacing-5;
+  font-family: $font-family-base;
+}
+
+.closeButton {
+  margin-left: auto;
+}
+
+.content {
+  padding: $spacing-2 $spacing-5;
+}

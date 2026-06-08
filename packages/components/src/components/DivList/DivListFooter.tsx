@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, TablePagination } from '@mui/material'
-import styles from './DivList.module.css'
+import styles from './DivList.module.scss'
 
 export interface DivListFooterProps {
   totalCount: number
@@ -11,14 +11,14 @@ export interface DivListFooterProps {
   onRowsPerPageChange: (size: number) => void
 }
 
-export function DivListFooter({
+const DivListFooter = ({
   totalCount,
   pageIndex,
   pageSize,
   rowsPerPageOptions = [20, 50, 100],
   onPageChange,
   onRowsPerPageChange,
-}: DivListFooterProps) {
+}: DivListFooterProps) => {
   return (
     <Grid container item xs={12} className={styles.footer} justifyContent="space-between" alignItems="center">
       <span className={styles.footerCount}>Total: {totalCount.toLocaleString('en')}</span>
@@ -36,3 +36,5 @@ export function DivListFooter({
     </Grid>
   )
 }
+
+export default DivListFooter

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, CircularProgress } from '@mui/material'
-import styles from './DynamicForm.module.css'
+import styles from './DynamicForm.module.scss'
 
 export interface ActionButtonsProps {
   actionTypes: string[]
@@ -46,14 +46,14 @@ const ACTION_LABELS: Record<string, string> = {
   NEXT: 'Next',
 }
 
-export function ActionButtons({
+const ActionButtons = ({
   actionTypes,
   pageAction,
   isLoading = false,
   disabled = false,
   layoutType,
   onSubmit,
-}: ActionButtonsProps) {
+}: ActionButtonsProps) => {
   const filteredActions = layoutType === 'steps'
     ? actionTypes.filter(a => a !== 'SUBMIT')
     : actionTypes
@@ -105,3 +105,5 @@ export function ActionButtons({
     </>
   )
 }
+
+export default ActionButtons

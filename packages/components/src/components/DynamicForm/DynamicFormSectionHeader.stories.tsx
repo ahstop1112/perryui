@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { DynamicFormSectionHeader } from './DynamicFormSectionHeader'
+import DynamicFormSectionHeader from './DynamicFormSectionHeader'
 
 const meta: Meta<typeof DynamicFormSectionHeader> = {
   title: 'DynamicForm/DynamicFormSectionHeader',

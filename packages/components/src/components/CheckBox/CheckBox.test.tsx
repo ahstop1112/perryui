@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { CheckBox } from './CheckBox'
+import CheckBox from './CheckBox'
 import type { CheckboxOption } from './CheckBox'
 
 const options: CheckboxOption[] = [

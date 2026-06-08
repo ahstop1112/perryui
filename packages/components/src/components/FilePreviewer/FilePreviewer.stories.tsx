@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { FilePreviewer } from './FilePreviewer'
+import FilePreviewer from './FilePreviewer'
 
 const meta: Meta<typeof FilePreviewer> = {
   title: 'Components/FilePreviewer',

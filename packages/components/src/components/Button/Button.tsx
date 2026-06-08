@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button as MuiButton, CircularProgress } from '@mui/material'
-import styles from './Button.module.css'
+import styles from './Button.module.scss'
 
 export interface ButtonProps {
   /** Visual style variant */
@@ -38,7 +38,7 @@ const SPINNER_SIZE: Record<NonNullable<ButtonProps['size']>, number> = {
   large: 20,
 }
 
-export function Button({
+const Button = ({
   variant = 'contained',
   size = 'medium',
   color = 'primary',
@@ -51,7 +51,7 @@ export function Button({
   endIcon,
   type = 'button',
   'aria-label': ariaLabel,
-}: ButtonProps) {
+}: ButtonProps) => {
   const isDisabled = disabled || loading
 
   return (
@@ -80,3 +80,5 @@ export function Button({
     </MuiButton>
   )
 }
+
+export default Button

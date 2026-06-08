@@ -1,0 +1,229 @@
+@use '../../../styles/tokens' as *;
+
+/* Form container */
+.form {
+  width: 98%;
+  margin: 0 auto;
+  padding-top: $spacing-5;
+  padding-bottom: $spacing-5;
+  position: relative;
+  font-family: $font-family-base;
+}
+
+.inlineForm {
+  width: auto;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+/* Loading */
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-overlay;
+  z-index: $z-index-loading-overlay;
+}
+
+/* Section */
+.section {
+  padding: $spacing-3 $spacing-1;
+}
+
+.sectionHeaderContainer {
+  margin-bottom: $spacing-2;
+}
+
+.sectionTitle {
+  font-size: $font-size-section-title;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Section body */
+.sectionBody {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.fieldItem {
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+  padding-right: $spacing-2;
+}
+
+/* Field */
+.fieldWrapper {
+  width: 100%;
+}
+
+.fieldInput {
+  width: 100%;
+}
+
+/* Label */
+.labelContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-1;
+  margin-bottom: 2px;
+}
+
+.labelSpaceBetween {
+  justify-content: space-between;
+}
+
+.label {
+  font-size: $font-size-caption;
+  line-height: 1.5;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.labelError {
+  color: $color-error-label;
+}
+
+.tooltipIcon {
+  font-size: $font-size-section-title;
+  cursor: help;
+}
+
+.remarks {
+  font-size: $font-size-caption;
+  padding-right: $spacing-1;
+}
+
+/* Accordion */
+.accordion {
+  background: none;
+  box-shadow: none;
+}
+
+.accordionSummary {
+  min-height: 0;
+}
+
+/* Multiple */
+.multipleSection {
+  padding-bottom: $spacing-3;
+  width: 100%;
+}
+
+.multipleChildSection {
+  margin-top: $spacing-3;
+  padding: $spacing-3 0;
+  border-top: 1px dotted $color-divider;
+  width: 100%;
+}
+
+.multipleHeader {
+  margin-bottom: $spacing-1;
+}
+
+.multipleLabel {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-body;
+  margin: 0;
+}
+
+.multipleItem {
+  padding-top: $spacing-2;
+  padding-bottom: $spacing-3;
+  border-bottom: $border-default;
+}
+
+.multipleItem:last-child {
+  border-bottom: none;
+}
+
+.multipleItemTitle {
+  font-size: $font-size-body;
+  font-weight: $font-weight-medium;
+}
+
+/* Buttons */
+.addButton {
+  font-size: $font-size-body;
+  border-radius: $border-radius-button;
+}
+
+.removeButton {
+  font-size: $font-size-body;
+  border-radius: $border-radius-button;
+}
+
+/* Submit area */
+.submitContainer {
+  margin-top: $spacing-4;
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-4;
+  padding-right: $spacing-4;
+  gap: $spacing-2;
+}
+
+.actionButton {
+  margin-right: $spacing-2;
+  font-size: $font-size-body;
+  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+  border-radius: $border-radius-button;
+  padding: $spacing-2 $spacing-6;
+}
+
+.actionButton:last-child {
+  margin-right: 0;
+}
+
+.cancelButton {
+  color: inherit;
+}
+
+.backButton {}
+
+/* Stepper */
+.stepperHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-5;
+}
+
+.stepper {
+  flex: 0 0 90%;
+  display: flex;
+  background: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.stepperButtons {
+  margin-top: $spacing-4;
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-4;
+  gap: $spacing-2;
+}
+
+/* Error */
+.errorContainer {
+  padding: $spacing-2 0;
+}
+
+.errorText {
+  color: $color-error-label;
+  margin: 0;
+  font-size: $font-size-caption;
+}

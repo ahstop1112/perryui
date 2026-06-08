@@ -1,0 +1,9 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-2;
+  margin-top: $spacing-4;
+  font-family: $font-family-base;
+}

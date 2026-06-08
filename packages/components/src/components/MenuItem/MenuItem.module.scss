@@ -1,0 +1,6 @@
+@use '../../../styles/tokens' as *;
+
+.root {
+  position: relative;
+  font-family: $font-family-base;
+}

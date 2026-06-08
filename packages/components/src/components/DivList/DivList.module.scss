@@ -1,0 +1,161 @@
+@use '../../../styles/tokens' as *;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: $spacing-3;
+  font-family: $font-family-base;
+}
+
+.title {
+  width: 100%;
+  font-size: $font-size-section-title;
+  font-weight: $font-weight-semibold;
+  margin: 0 0 $spacing-2;
+}
+
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.emptyWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.emptyMessage {
+  font-size: $font-size-section-title;
+  text-align: center;
+}
+
+.listContainer {
+  width: 100%;
+  overflow-x: auto;
+  padding-top: $spacing-2;
+}
+
+.list {
+  width: 100%;
+  font-size: $font-size-body;
+}
+
+/* Header */
+.listHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  border-bottom: $border-table;
+}
+
+.headerCell {
+  padding: $spacing-1 $spacing-2;
+  font-size: $font-size-caption;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  user-select: none;
+}
+
+.sortIcon {
+  display: inline-flex;
+  align-items: center;
+  width: 20px;
+}
+
+/* Body */
+.listBody {
+  width: 100%;
+}
+
+.listRow {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: $spacing-2 0;
+}
+
+.expandCell {
+  flex: 0 0 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.rowCell {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-body;
+  padding: $spacing-3 $spacing-2;
+  border-bottom: $border-table;
+  cursor: pointer;
+}
+
+.listRow:last-child .rowCell {
+  border-bottom: none;
+}
+
+/* Field width helpers */
+.field_5  { flex: 0 0 5%; }
+.field_15 { flex: 0 0 15%; }
+.field_18 { flex: 0 0 18%; }
+.field_20 { flex: 0 0 20%; }
+.field_25 { flex: 0 0 25%; }
+.field_30 { flex: 0 0 30%; }
+.field_35 { flex: 0 0 35%; }
+.field_45 { flex: 0 0 45%; }
+.field_75 { flex: 0 0 75%; }
+
+/* Action */
+.actionIcon {
+  cursor: pointer;
+  border-radius: $border-radius-action;
+  width: 18px;
+  height: 18px;
+}
+
+/* Sub-table */
+.subTableContainer {
+  padding: $spacing-4;
+  width: 100%;
+}
+
+.subTableHead {}
+.subHeaderCell {
+  font-size: $font-size-caption;
+  font-weight: $font-weight-semibold;
+  border: none;
+}
+
+.subRow { width: 100%; }
+.subRowCell { font-size: $font-size-caption; border: none; }
+
+/* Footer */
+.footer {
+  max-width: 100%;
+  overflow: hidden;
+  padding: $spacing-1 0;
+}
+
+.footerCount {
+  font-size: $font-size-body;
+  font-weight: $font-weight-bold;
+  display: flex;
+  align-items: center;
+}
+
+.pagination {}
